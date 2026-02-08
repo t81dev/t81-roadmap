@@ -80,4 +80,4 @@ Use this section for recurring updates.
 - Fill backup owners in owner map.
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
 - Triage new `rfc-intake` issues generated from `t81-foundation/spec` changes.
-- Execute runtime contract promotion tracker `#12` and close with linked cross-repo PRs.
+- Open follow-up tracker for the next runtime contract promotion cycle after closing `#12`.

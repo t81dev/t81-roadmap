@@ -1,5 +1,23 @@
 # Migration Checkpoints
 
+## 2026-02-08 - Runtime Contract v0.3 Promotion
+
+- Runtime baseline: `runtime-contract-v0.3`
+- VM contract version: `2026-02-08-v3`
+- Canonical commit pins:
+  - `t81-vm`: `3fd42f6`
+  - `t81-lang`: `25331a2`
+  - `t81-python`: `297ac5c`
+  - `t81-docs`: `ce97d7e`
+  - `t81-roadmap`: `8f39703`
+- Evidence:
+  - `t81-vm` `ci`: https://github.com/t81dev/t81-vm/actions/runs/21804899539
+  - `t81-vm` `ecosystem-contract`: https://github.com/t81dev/t81-vm/actions/runs/21804899527
+  - `t81-lang` `ci`: https://github.com/t81dev/t81-lang/actions/runs/21804911390
+  - `t81-python` `CI`: https://github.com/t81dev/t81-python/actions/runs/21804911368
+  - `t81-docs` `Docs Validate`: https://github.com/t81dev/t81-docs/actions/runs/21805009436
+- Promotion tracker: https://github.com/t81dev/t81-roadmap/issues/12
+
 ## 2026-02-08 - Runtime Baseline Alignment
 
 - Runtime baseline: `runtime-contract-v0.2`
