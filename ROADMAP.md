@@ -41,7 +41,7 @@ Milestone matrix: `PHASE0_ALIGNMENT_MATRIX.md`
 Owner cluster: `t81-foundation`, `t81-vm`, `t81lib`, `t81-python`, `ternary_gcc_plugin`
 Milestone matrix: `PHASE1_STABILIZATION_MATRIX.md`
 
-- [ ] Lock core runtime semantics in `t81-foundation`.
+- [x] Lock core runtime semantics in `t81-foundation`.
 - [x] Lock executable VM contract and trap/opcode registry in `t81-vm`.
 - [ ] Harden arithmetic and quantization primitives in `t81lib`.
 - [ ] Validate GCC plugin ABI contract in `ternary_gcc_plugin`.
