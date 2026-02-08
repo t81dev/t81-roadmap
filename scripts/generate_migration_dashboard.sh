@@ -31,8 +31,13 @@ abi_version="$(jq -r '.host_abi.version' "${CONTRACT_FILE}")"
 runtime_tag="runtime-contract-v$(awk -F. '{print $1 "." $2}' <<<"${abi_version}")"
 vm_opcode_count="$(jq -r '.supported_opcodes | length' "${CONTRACT_FILE}")"
 
-parity_opcode_line="$(rg -N '^- Opcode coverage:' "${PARITY_FILE}" | head -n1)"
-parity_test_line="$(rg -N '^- VM conformance tests' "${PARITY_FILE}" | head -n1)"
+parity_opcode_line="$(grep -m1 '^- Opcode coverage:' "${PARITY_FILE}" || true)"
+parity_test_line="$(grep -m1 '^- VM conformance tests' "${PARITY_FILE}" || true)"
+
+if [[ -z "${parity_opcode_line}" || -z "${parity_test_line}" ]]; then
+  echo "Could not parse parity metrics from ${PARITY_FILE}" >&2
+  exit 1
+fi
 
 foundation_opcode_count="$(sed -E 's/.*vs `([0-9]+)`.*/\1/' <<<"${parity_opcode_line}")"
 vm_test_count="$(sed -E 's/.*: `([0-9]+)` \(`t81-vm`\) vs.*/\1/' <<<"${parity_test_line}")"

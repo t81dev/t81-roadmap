@@ -27,7 +27,7 @@ ensure_label() {
   local color="$2"
   local description="$3"
 
-  if gh label list --repo "${ROADMAP_REPO}" --search "${name}" --json name --jq '.[].name' | rg -Fx "${name}" >/dev/null 2>&1; then
+  if gh label view "${name}" --repo "${ROADMAP_REPO}" >/dev/null 2>&1; then
     return
   fi
 
