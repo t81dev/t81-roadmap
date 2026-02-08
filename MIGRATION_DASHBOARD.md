@@ -8,7 +8,7 @@ Snapshot date: 2026-02-08.
 - Contract file: `t81-vm/docs/contracts/vm-compatibility.json`
 - Contract version: `2026-02-08`
 - Contract tag baseline: `runtime-contract-v0.1`
-- Contract commit pin (`t81-vm/main`): `23a1003`
+- Contract commit pin (`t81-vm/main`): `8df1c47`
 - Supported opcode count: `81`
 
 ## VM Parity
@@ -21,10 +21,10 @@ Snapshot date: 2026-02-08.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
-| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21803039270) | 2026-02-08T18:20:41Z |
-| `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21802961670) | 2026-02-08T18:15:10Z |
-| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21802837403) | 2026-02-08T18:06:39Z |
-| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21802456600) | 2026-02-08T17:40:01Z |
+| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21803789013) | 2026-02-08T19:14:09Z |
+| `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21803788993) | 2026-02-08T19:14:09Z |
+| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21803788991) | 2026-02-08T19:14:09Z |
+| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21803789065) | 2026-02-08T19:14:09Z |
 
 ## Failing Checks
 

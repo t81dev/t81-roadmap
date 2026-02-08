@@ -1,0 +1,68 @@
+name: Runtime Sync Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 7 * * 1"
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout t81-roadmap
+        uses: actions/checkout@v4
+        with:
+          path: t81-roadmap
+
+      - name: Checkout t81-vm
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-vm
+          path: t81-vm
+          ref: main
+
+      - name: Checkout t81-lang
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-lang
+          path: t81-lang
+          ref: main
+
+      - name: Checkout t81-python
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-python
+          path: t81-python
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Ensure scripts executable
+        run: chmod +x scripts/*.sh
+        working-directory: t81-roadmap
+
+      - name: Generate runtime sync report
+        run: scripts/generate_runtime_sync_report.sh RUNTIME_SYNC_REPORT.md
+        working-directory: t81-roadmap
+        env:
+          T81_VM_DIR: ${{ github.workspace }}/t81-vm
+          T81_LANG_DIR: ${{ github.workspace }}/t81-lang
+          T81_PYTHON_DIR: ${{ github.workspace }}/t81-python
+
+      - name: Commit and push runtime sync report
+        working-directory: t81-roadmap
+        run: |
+          if git diff --quiet -- RUNTIME_SYNC_REPORT.md; then
+            echo "No runtime sync report changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add RUNTIME_SYNC_REPORT.md
+          git commit -m "chore: refresh runtime sync report"
+          git push origin HEAD:main
