@@ -33,6 +33,8 @@ elif expr == "opcode_count":
     print(len(data.get("supported_opcodes", [])))
 elif expr == "abi_version":
     print(data.get("host_abi", {}).get("version", "unknown"))
+elif expr == "parity_artifact_path":
+    print(data.get("execution_mode_parity_evidence", {}).get("artifact_path", "unknown"))
 else:
     print("unknown")
 PY
@@ -41,6 +43,7 @@ PY
 contract_version="$(read_contract_field contract_version)"
 opcode_count="$(read_contract_field opcode_count)"
 abi_version="$(read_contract_field abi_version)"
+parity_artifact_path="$(read_contract_field parity_artifact_path)"
 
 declare -a rows=()
 failures=0
@@ -57,6 +60,7 @@ run_check() {
 }
 
 run_check "t81-vm make check" make -C "${VM_DIR}" check
+run_check "t81-vm parity evidence artifact" test -f "${VM_DIR}/${parity_artifact_path}"
 run_check "t81-vm ecosystem canary" make -C "${VM_DIR}" canary-check
 run_check "t81-lang runtime compatibility" env T81_VM_DIR="${VM_DIR}" python3 "${LANG_DIR}/scripts/check-vm-compat.py"
 run_check "t81-lang compiler/runtime roundtrip" env T81_VM_DIR="${VM_DIR}" bash "${LANG_DIR}/scripts/check-compiler-roundtrip.sh"
@@ -79,6 +83,7 @@ fi
   echo "- Commit pin: \`${vm_pin}\`"
   echo "- Contract version: \`${contract_version}\`"
   echo "- ABI version: \`${abi_version}\`"
+  echo "- Parity evidence artifact: \`${parity_artifact_path}\`"
   echo "- Supported opcode count: \`${opcode_count}\`"
   echo
   echo "## Health Summary"

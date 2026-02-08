@@ -1,14 +1,15 @@
 # Runtime Sync Report
 
 Snapshot date: 2026-02-08.
-Snapshot time (UTC): 2026-02-08T20:41:42Z.
+Snapshot time (UTC): 2026-02-08T21:29:41Z.
 
 ## VM Baseline
 
 - Repository: `t81-vm`
-- Commit pin: `3fd42f6`
+- Commit pin: `b04ce02`
 - Contract version: `2026-02-08-v3`
 - ABI version: `0.1.0`
+- Parity evidence artifact: `build/mode-parity/parity-evidence.json`
 - Supported opcode count: `81`
 
 ## Health Summary
@@ -20,6 +21,7 @@ Snapshot time (UTC): 2026-02-08T20:41:42Z.
 | Check | Status |
 | --- | --- |
 | t81-vm make check | pass |
+| t81-vm parity evidence artifact | pass |
 | t81-vm ecosystem canary | pass |
 | t81-lang runtime compatibility | pass |
 | t81-lang compiler/runtime roundtrip | pass |

@@ -1,5 +1,26 @@
 # Migration Checkpoints
 
+## 2026-02-08 - Runtime Contract v0.4 Evidence Phase
+
+- Promotion tracker: https://github.com/t81dev/t81-roadmap/issues/13
+- Runtime baseline (active tag): `runtime-contract-v0.3`
+- VM contract version under v0.4 prep: `2026-02-08-v3`
+- Canonical commit pins:
+  - `t81-vm`: `b04ce02`
+  - `t81-lang`: `ab8110e`
+  - `t81-python`: `297ac5c`
+  - `t81-docs`: `d7ee51a`
+  - `t81-roadmap`: `c08d272`
+- Evidence:
+  - `t81-vm` `ci`: https://github.com/t81dev/t81-vm/actions/runs/21805638060
+  - `t81-vm` `lang-compat`: https://github.com/t81dev/t81-vm/actions/runs/21805640005
+  - `t81-vm` `ecosystem-contract`: https://github.com/t81dev/t81-vm/actions/runs/21805640049
+  - `t81-docs` `Docs Validate`: https://github.com/t81dev/t81-docs/actions/runs/21805693375
+- Scope landed:
+  - mode parity evidence artifact generation (`build/mode-parity/parity-evidence.json`)
+  - CI artifact publication and contract enforcement of parity evidence metadata
+  - downstream docs/report generators updated with parity evidence references
+
 ## 2026-02-08 - Runtime Contract v0.3 Promotion
 
 - Runtime baseline: `runtime-contract-v0.3`

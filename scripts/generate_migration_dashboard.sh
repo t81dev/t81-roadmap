@@ -34,6 +34,8 @@ if [[ -z "${runtime_tag}" ]]; then
 fi
 vm_opcode_count="$(jq -r '.supported_opcodes | length' "${CONTRACT_FILE}")"
 vm_contract_pin="$(git -C "${VM_DIR}" rev-parse HEAD)"
+parity_evidence_schema="$(jq -r '.execution_mode_parity_evidence.schema_version // "unknown"' "${CONTRACT_FILE}")"
+parity_evidence_path="$(jq -r '.execution_mode_parity_evidence.artifact_path // "unknown"' "${CONTRACT_FILE}")"
 
 parity_opcode_line="$(grep -m1 '^- Opcode coverage:' "${PARITY_FILE}" || true)"
 parity_test_line="$(grep -m1 '^- VM conformance tests' "${PARITY_FILE}" || true)"
@@ -125,6 +127,7 @@ done
   echo "- Active tagged contract baseline: \`${runtime_tag}\`"
   echo "- Contract commit pin (\`t81-vm/main\`): \`${vm_contract_pin}\`"
   echo "- Supported opcode count: \`${vm_opcode_count}\`"
+  echo "- Execution-mode parity evidence: \`${parity_evidence_path}\` (\`${parity_evidence_schema}\`)"
   echo
   echo "## VM Parity"
   echo
