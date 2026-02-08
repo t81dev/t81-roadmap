@@ -28,9 +28,12 @@ fi
 snapshot_date="$(date -u +"%Y-%m-%d")"
 contract_version="$(jq -r '.contract_version' "${CONTRACT_FILE}")"
 abi_version="$(jq -r '.host_abi.version' "${CONTRACT_FILE}")"
-runtime_tag="runtime-contract-v$(awk -F. '{print $1 "." $2}' <<<"${abi_version}")"
+runtime_tag="$(git -C "${VM_DIR}" tag --list 'runtime-contract-v*' --sort=version:refname | tail -n1 || true)"
+if [[ -z "${runtime_tag}" ]]; then
+  runtime_tag="runtime-contract-v$(awk -F. '{print $1 "." $2}' <<<"${abi_version}")"
+fi
 vm_opcode_count="$(jq -r '.supported_opcodes | length' "${CONTRACT_FILE}")"
-vm_contract_pin="$(git -C "${VM_DIR}" rev-parse --short HEAD)"
+vm_contract_pin="$(git -C "${VM_DIR}" rev-parse HEAD)"
 
 parity_opcode_line="$(grep -m1 '^- Opcode coverage:' "${PARITY_FILE}" || true)"
 parity_test_line="$(grep -m1 '^- VM conformance tests' "${PARITY_FILE}" || true)"
@@ -119,7 +122,7 @@ done
   echo "- Canonical owner: \`t81-vm\`"
   echo "- Contract file: \`t81-vm/docs/contracts/vm-compatibility.json\`"
   echo "- Contract version: \`${contract_version}\`"
-  echo "- Contract tag baseline: \`${runtime_tag}\`"
+  echo "- Active tagged contract baseline: \`${runtime_tag}\`"
   echo "- Contract commit pin (\`t81-vm/main\`): \`${vm_contract_pin}\`"
   echo "- Supported opcode count: \`${vm_opcode_count}\`"
   echo

@@ -8,8 +8,7 @@ Snapshot date: 2026-02-08.
 - Contract file: `t81-vm/docs/contracts/vm-compatibility.json`
 - Contract version: `2026-02-08-v2`
 - Active tagged contract baseline: `runtime-contract-v0.2`
-- Current migration contract pin (`t81-vm/main`): `30306b32eea8b7acde1be354ed10d24881989225`
-- `runtime-contract-v0.2` status: tagged and active
+- Contract commit pin (`t81-vm/main`): `fdbdc5ecc8434f841db9a3ed7795907b99911924`
 - Supported opcode count: `81`
 
 ## VM Parity
@@ -22,10 +21,10 @@ Snapshot date: 2026-02-08.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
-| `t81dev/t81-vm` | `ecosystem-contract` | [unknown](https://github.com/t81dev/t81-vm/actions/runs/21803908192) | 2026-02-08T19:22:45Z |
-| `t81dev/t81-lang` | `ci` | [unknown](https://github.com/t81dev/t81-lang/actions/runs/21803908176) | 2026-02-08T19:22:45Z |
-| `t81dev/t81-python` | `CI` | [unknown](https://github.com/t81dev/t81-python/actions/runs/21803908225) | 2026-02-08T19:22:45Z |
-| `t81dev/t81-docs` | `Docs Validate` | [unknown](https://github.com/t81dev/t81-docs/actions/runs/21803908294) | 2026-02-08T19:22:45Z |
+| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21804446667) | 2026-02-08T20:01:03Z |
+| `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21804446742) | 2026-02-08T20:01:04Z |
+| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21804446817) | 2026-02-08T20:01:04Z |
+| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21804471504) | 2026-02-08T20:02:36Z |
 
 ## Failing Checks
 

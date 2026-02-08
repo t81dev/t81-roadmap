@@ -61,10 +61,10 @@ Use this section for recurring updates.
 
 - Scope: Migration contract gates, CI stabilization, and intake fan-out operationalization.
 - Repos touched: `t81-vm`, `t81-lang`, `t81-python`, `t81-docs`, `t81-roadmap`.
-- Risks discovered: VM parity remains the primary technical migration risk (`29` vs `81` opcode coverage).
-- Evidence added: green contract CI checks across core repos and refreshed `MIGRATION_DASHBOARD.md`.
+- Risks discovered: parity risk retired; remaining risk concentrated in contract/version drift across downstream repos.
+- Evidence added: green contract CI checks across core repos, active `runtime-contract-v0.2` baseline, and refreshed `MIGRATION_DASHBOARD.md`.
 - Maturity movement: cross-repo contract governance moved from ad hoc updates to enforced automation.
-- Next actions: execute VM parity P0 milestone (`Migration Parity P0`) and reduce `t81-lang` runtime-coupled manifest.
+- Next actions: sustain pinned/floating lane discipline and expand Phase 3 reproducible benchmark publication.
 
 ### 2026-02-08 (Parity Closeout)
 

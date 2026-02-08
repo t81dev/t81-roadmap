@@ -31,7 +31,7 @@ Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constr
 
 - [ ] Freeze terminology across `t81-foundation`, `duotronic-whitepaper`, and `t81-docs`.
 - [ ] Define a single source of truth for formal vs interpretive docs.
-- [ ] Establish reproducible benchmark protocol in `t81-benchmarks`.
+- [x] Establish reproducible benchmark protocol in `t81-benchmarks`.
 - [ ] Publish ecosystem constraint register in `t81-constraints`.
 
 ## Phase 1: Core Stack Stabilization
@@ -39,10 +39,10 @@ Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constr
 Owner cluster: `t81-foundation`, `t81-vm`, `t81lib`, `t81-python`, `ternary_gcc_plugin`
 
 - [ ] Lock core runtime semantics in `t81-foundation`.
-- [ ] Lock executable VM contract and trap/opcode registry in `t81-vm`.
+- [x] Lock executable VM contract and trap/opcode registry in `t81-vm`.
 - [ ] Harden arithmetic and quantization primitives in `t81lib`.
 - [ ] Validate GCC plugin ABI contract in `ternary_gcc_plugin`.
-- [ ] Document and verify `t81-python` bridge to `t81-vm` host ABI.
+- [x] Document and verify `t81-python` bridge to `t81-vm` host ABI.
 
 ## Phase 2: Tooling and Developer Experience
 
@@ -74,9 +74,9 @@ Owner cluster: `trinity`, `trinity-decrypt`, `trinity-pow`, `t81-benchmarks`
 
 Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 
-- [ ] Create release criteria by maturity tier (research, preview, stable).
-- [ ] Publish cross-repo compatibility matrix and machine-readable runtime contract versions.
-- [ ] Keep `MIGRATION_DASHBOARD.md` refreshed from CI automation (`update-migration-dashboard.yml`).
+- [x] Create release criteria by maturity tier (research, preview, stable).
+- [x] Publish cross-repo compatibility matrix and machine-readable runtime contract versions.
+- [x] Keep `MIGRATION_DASHBOARD.md` refreshed from CI automation (`update-migration-dashboard.yml`).
 - [ ] Publish contributor onboarding path from first issue to advanced work.
 
 ## Milestone Rules
