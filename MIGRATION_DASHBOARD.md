@@ -25,8 +25,8 @@ Snapshot date: 2026-02-08.
 | `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21806842118) | 2026-02-08T22:52:35Z |
 | `t81dev/t81-vm` | `ecosystem-compat-matrix` | unknown | n/a |
 | `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21806844336) | 2026-02-08T22:52:18Z |
-| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21806844326) | 2026-02-08T22:52:49Z |
-| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21806908191) | 2026-02-08T22:56:34Z |
+| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21807280712) | 2026-02-08T23:22:57Z |
+| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21807252468) | 2026-02-08T23:19:25Z |
 
 ## Failing Checks
 
