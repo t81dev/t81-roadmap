@@ -32,6 +32,7 @@ Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constr
 - [ ] Freeze terminology across `t81-foundation`, `duotronic-whitepaper`, and `t81-docs`.
 - [ ] Define a single source of truth for formal vs interpretive docs.
 - [x] Establish reproducible benchmark protocol in `t81-benchmarks`.
+- [ ] Establish monthly benchmark publication cadence in `t81-benchmarks` (tracker: `#17`).
 - [ ] Publish ecosystem constraint register in `t81-constraints`.
 
 ## Phase 1: Core Stack Stabilization
@@ -48,19 +49,19 @@ Owner cluster: `t81-foundation`, `t81-vm`, `t81lib`, `t81-python`, `ternary_gcc_
 
 Owner cluster: `t81-docs`, `t81-examples`, `ternary-tools`, `ternary-pager`
 
-- [ ] Expand end-to-end samples in `t81-examples`.
-- [ ] Build unified docs navigation in `t81-docs`.
-- [ ] Add inspection/debug workflows via `ternary-tools` and `ternary-pager`.
+- [ ] Expand end-to-end samples in `t81-examples` (tracker: `#15`).
+- [ ] Build unified docs navigation in `t81-docs` (tracker: `#15`).
+- [ ] Add inspection/debug workflows via `ternary-tools` and `ternary-pager` (tracker: `#15`).
 - [ ] Publish migration guides from binary-first systems.
 
 ## Phase 3: Hardware and Systems Prototyping
 
 Owner cluster: `t81-hardware`, `ternary-fabric`, `ternary-memory-research`
 
-- [ ] Define simulation milestones in `t81-hardware`.
-- [ ] Connect memory/interconnect experiments from `ternary-fabric`.
-- [ ] Validate memory hypotheses in `ternary-memory-research`.
-- [ ] Specify software-hardware co-design checkpoints.
+- [ ] Define simulation milestones in `t81-hardware` (tracker: `#16`).
+- [ ] Connect memory/interconnect experiments from `ternary-fabric` (tracker: `#16`).
+- [ ] Validate memory hypotheses in `ternary-memory-research` (tracker: `#16`).
+- [ ] Specify software-hardware co-design checkpoints (tracker: `#16`).
 
 ## Phase 4: Security and Applied Domains
 
@@ -77,7 +78,7 @@ Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 - [x] Create release criteria by maturity tier (research, preview, stable).
 - [x] Publish cross-repo compatibility matrix and machine-readable runtime contract versions.
 - [x] Keep `MIGRATION_DASHBOARD.md` refreshed from CI automation (`update-migration-dashboard.yml`).
-- [x] Track next runtime contract promotion in a cross-repo issue (`#13`).
+- [x] Track next runtime contract promotion in a cross-repo issue (`#14`).
 - [ ] Publish contributor onboarding path from first issue to advanced work.
 
 ## Milestone Rules

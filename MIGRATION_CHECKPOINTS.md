@@ -22,6 +22,7 @@
   - machine-readable mode parity evidence metadata and validator enforcement
   - CI artifact publication for parity evidence in `ci` and `ecosystem-contract`
   - downstream compatibility/doc references synchronized to `runtime-contract-v0.4`
+- Next promotion tracker: https://github.com/t81dev/t81-roadmap/issues/14
 
 ## 2026-02-08 - Runtime Contract v0.4 Evidence Phase
 

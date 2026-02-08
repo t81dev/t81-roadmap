@@ -80,4 +80,7 @@ Use this section for recurring updates.
 - Fill backup owners in owner map.
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
 - Triage new `rfc-intake` issues generated from `t81-foundation/spec` changes.
-- Execute runtime contract promotion tracker `#13` and close with linked cross-repo PRs.
+- Execute runtime contract promotion tracker `#14` and close with linked cross-repo PRs.
+- Execute Phase 2 kickoff tracker `#15` with linked repo-level issues.
+- Execute Phase 3 kickoff tracker `#16` with milestone matrix evidence.
+- Execute benchmark cadence tracker `#17` and publish monthly evidence checklist.
