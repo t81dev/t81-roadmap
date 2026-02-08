@@ -36,12 +36,13 @@ Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constr
 
 ## Phase 1: Core Stack Stabilization
 
-Owner cluster: `t81-foundation`, `t81lib`, `t81-python`, `ternary_gcc_plugin`
+Owner cluster: `t81-foundation`, `t81-vm`, `t81lib`, `t81-python`, `ternary_gcc_plugin`
 
 - [ ] Lock core runtime semantics in `t81-foundation`.
+- [ ] Lock executable VM contract and trap/opcode registry in `t81-vm`.
 - [ ] Harden arithmetic and quantization primitives in `t81lib`.
 - [ ] Validate GCC plugin ABI contract in `ternary_gcc_plugin`.
-- [ ] Document Python integration surface in `t81-python`.
+- [ ] Document and verify `t81-python` bridge to `t81-vm` host ABI.
 
 ## Phase 2: Tooling and Developer Experience
 
@@ -74,7 +75,7 @@ Owner cluster: `trinity`, `trinity-decrypt`, `trinity-pow`, `t81-benchmarks`
 Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 
 - [ ] Create release criteria by maturity tier (research, preview, stable).
-- [ ] Publish cross-repo compatibility matrix.
+- [ ] Publish cross-repo compatibility matrix and machine-readable runtime contract versions.
 - [ ] Publish contributor onboarding path from first issue to advanced work.
 
 ## Milestone Rules

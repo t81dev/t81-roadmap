@@ -41,7 +41,7 @@ Snapshot date: February 8, 2026.
 | Cluster | Primary Repos | Steward | Backup |
 | --- | --- | --- | --- |
 | Specs and Constraints | `t81-foundation`, `duotronic-whitepaper`, `t81-constraints` | `@t81dev` | `TBD` |
-| Runtime and Quantization | `t81lib`, `ternary`, `t81-python`, `ternary_gcc_plugin` | `@t81dev` | `TBD` |
+| Runtime and Quantization | `t81-vm`, `t81lib`, `ternary`, `t81-python`, `ternary_gcc_plugin` | `@t81dev` | `TBD` |
 | Tooling and Docs | `t81-docs`, `t81-examples`, `ternary-tools`, `t81-roadmap` | `@t81dev` | `TBD` |
 | Hardware and Systems | `t81-hardware`, `ternary-fabric`, `ternary-memory-research` | `@t81dev` | `TBD` |
 | Crypto Experiments | `trinity`, `trinity-decrypt`, `trinity-pow` | `@t81dev` | `TBD` |
@@ -50,7 +50,7 @@ Snapshot date: February 8, 2026.
 
 - Documentation and onboarding consistency.
 - Benchmark reproducibility and publication hygiene.
-- Spec/runtime boundary clarity.
+- Spec/runtime boundary clarity (`t81-foundation` -> `t81-vm` execution contract split).
 - Hardware simulation path definition.
 
 ## Tracking Template
