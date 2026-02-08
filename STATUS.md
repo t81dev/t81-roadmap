@@ -78,6 +78,6 @@ Use this section for recurring updates.
 ## Pending Coordination Items
 
 - Fill backup owners in owner map.
-- Publish compatibility matrix in `ROADMAP.md` Phase 5.
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
 - Triage new `rfc-intake` issues generated from `t81-foundation/spec` changes.
+- Execute runtime contract promotion tracker `#12` and close with linked cross-repo PRs.

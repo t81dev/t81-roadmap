@@ -20,6 +20,7 @@ This repository is the canonical place to:
 - Current Status Board: `STATUS.md`
 - Migration Dashboard: `MIGRATION_DASHBOARD.md`
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
+- Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
 - Contribution Process: `CONTRIBUTING.md`
 
 ## Automation
