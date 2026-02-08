@@ -80,7 +80,7 @@ Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 - [x] Publish cross-repo compatibility matrix and machine-readable runtime contract versions.
 - [x] Keep `MIGRATION_DASHBOARD.md` refreshed from CI automation (`update-migration-dashboard.yml`).
 - [x] Track next runtime contract promotion in a cross-repo issue (`#14`).
-- [ ] Publish contributor onboarding path from first issue to advanced work.
+- [x] Publish contributor onboarding path from first issue to advanced work.
 
 ## Milestone Rules
 

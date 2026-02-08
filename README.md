@@ -25,6 +25,7 @@ This repository is the canonical place to:
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
 - Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
 - Ecosystem Release Manifest: `ECOSYSTEM_RELEASE_MANIFEST.json`
+- Contributor Onboarding Path: `CONTRIBUTOR_ONBOARDING_PATH.md`
 - Contribution Process: `CONTRIBUTING.md`
 
 ## Automation

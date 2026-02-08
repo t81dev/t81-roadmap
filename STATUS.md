@@ -81,7 +81,6 @@ Use this section for recurring updates.
 - Fill backup owners in owner map.
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
 - Triage new `rfc-intake` issues generated from `t81-foundation/spec` changes.
-- Execute runtime contract promotion tracker `#14` and close with linked cross-repo PRs.
 - Keep `PHASE3_MILESTONE_MATRIX.md` linked issues moving and attach evidence artifacts as they land.
 - Keep monthly publication bundles current in `t81-benchmarks/publications/`.
 - Keep weekly ecosystem release-cut records current under `releases/`.

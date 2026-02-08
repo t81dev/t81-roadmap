@@ -16,6 +16,9 @@ Use this order when choosing work:
 3. Submit PR with clear scope, assumptions, and validation steps.
 4. Update docs/checklists in affected repos before merge.
 
+Contributor growth path:
+- `CONTRIBUTOR_ONBOARDING_PATH.md`
+
 ## Roadmap Automation
 
 1. Authenticate GitHub CLI once: `gh auth login`
