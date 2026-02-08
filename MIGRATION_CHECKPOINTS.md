@@ -17,6 +17,7 @@
   - `t81-python` `CI`: https://github.com/t81dev/t81-python/actions/runs/21804911368
   - `t81-docs` `Docs Validate`: https://github.com/t81dev/t81-docs/actions/runs/21805009436
 - Promotion tracker: https://github.com/t81dev/t81-roadmap/issues/12
+- Next promotion tracker: https://github.com/t81dev/t81-roadmap/issues/13
 
 ## 2026-02-08 - Runtime Baseline Alignment
 
