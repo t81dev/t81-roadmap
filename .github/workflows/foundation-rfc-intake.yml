@@ -1,0 +1,35 @@
+name: Foundation RFC Intake
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 6 * * 1"
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Checkout t81-roadmap
+        uses: actions/checkout@v4
+        with:
+          path: t81-roadmap
+
+      - name: Checkout t81-foundation
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-foundation
+          path: t81-foundation
+          ref: main
+          fetch-depth: 200
+
+      - name: Run intake automation
+        working-directory: t81-roadmap
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ROADMAP_REPO: t81dev/t81-roadmap
+          FOUNDATION_DIR: ${{ github.workspace }}/t81-foundation
+        run: scripts/intake_foundation_spec_changes.sh

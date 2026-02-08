@@ -1,0 +1,44 @@
+name: Update Migration Dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 6 * * 1"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout t81-roadmap
+        uses: actions/checkout@v4
+        with:
+          path: t81-roadmap
+
+      - name: Checkout t81-vm
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-vm
+          path: t81-vm
+          ref: main
+
+      - name: Generate migration dashboard
+        run: scripts/generate_migration_dashboard.sh MIGRATION_DASHBOARD.md
+        working-directory: t81-roadmap
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: t81dev
+          T81_VM_DIR: ${{ github.workspace }}/t81-vm
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          path: t81-roadmap
+          commit-message: "chore: refresh migration dashboard"
+          branch: "chore/refresh-migration-dashboard"
+          title: "chore: refresh migration dashboard"
+          body: |
+            Automated refresh of `MIGRATION_DASHBOARD.md`.

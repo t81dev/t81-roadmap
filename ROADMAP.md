@@ -76,6 +76,7 @@ Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 
 - [ ] Create release criteria by maturity tier (research, preview, stable).
 - [ ] Publish cross-repo compatibility matrix and machine-readable runtime contract versions.
+- [ ] Keep `MIGRATION_DASHBOARD.md` refreshed from CI automation (`update-migration-dashboard.yml`).
 - [ ] Publish contributor onboarding path from first issue to advanced work.
 
 ## Milestone Rules
@@ -85,3 +86,4 @@ Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 - Claims about performance require reproducible benchmark artifacts.
 - Promotion between phases requires meeting the tier criteria in `STATUS.md`.
 - VM/runtime contract changes require a version/tag bump in `t81-vm` and synchronized compatibility updates in `t81-lang` and `t81-python`.
+- `t81-foundation/spec` updates require intake issues via `foundation-rfc-intake.yml` with linked follow-up tasks in affected repos.

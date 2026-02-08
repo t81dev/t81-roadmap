@@ -18,13 +18,18 @@ This repository is the canonical place to:
 - Roadmap: `ROADMAP.md`
 - Repository Catalog: `REPOSITORIES.md`
 - Current Status Board: `STATUS.md`
+- Migration Dashboard: `MIGRATION_DASHBOARD.md`
 - Contribution Process: `CONTRIBUTING.md`
 
 ## Automation
 
 - Refresh catalog locally: `scripts/sync_repositories.sh t81dev REPOSITORIES.md`
 - Seed milestones/issues (after `gh auth login`): `scripts/bootstrap_milestones_and_issues.sh t81dev/t81-roadmap`
+- Regenerate migration dashboard: `scripts/generate_migration_dashboard.sh MIGRATION_DASHBOARD.md`
+- Run foundation spec/RFC intake: `scripts/intake_foundation_spec_changes.sh`
 - Scheduled catalog sync workflow: `.github/workflows/sync-repositories.yml`
+- Scheduled dashboard refresh workflow: `.github/workflows/update-migration-dashboard.yml`
+- Scheduled foundation intake workflow: `.github/workflows/foundation-rfc-intake.yml`
 
 ## Ecosystem Structure
 
