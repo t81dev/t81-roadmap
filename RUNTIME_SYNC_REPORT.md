@@ -1,12 +1,12 @@
 # Runtime Sync Report
 
 Snapshot date: 2026-02-08.
-Snapshot time (UTC): 2026-02-08T19:21:01Z.
+Snapshot time (UTC): 2026-02-08T19:23:18Z.
 
 ## VM Baseline
 
 - Repository: `t81-vm`
-- Commit pin: `8df1c47`
+- Commit pin: `85031ec`
 - Contract version: `2026-02-08`
 - ABI version: `0.1.0`
 - Supported opcode count: `81`
