@@ -1,5 +1,29 @@
 # Migration Checkpoints
 
+## 2026-02-08 - Runtime Contract v0.5 Promotion
+
+- Promotion tracker: https://github.com/t81dev/t81-roadmap/issues/14
+- Runtime baseline: `runtime-contract-v0.5`
+- VM contract version: `2026-02-08-v5`
+- Canonical commit pins:
+  - `t81-vm`: `4158a42`
+  - `t81-lang`: `0051f0c`
+  - `t81-python`: `a4eef63`
+  - `t81-docs`: `85211fa`
+  - `t81-roadmap`: `4988cd2`
+- Evidence:
+  - `t81-vm` `ci`: https://github.com/t81dev/t81-vm/actions/runs/21806842109
+  - `t81-vm` `lang-compat`: https://github.com/t81dev/t81-vm/actions/runs/21806842110
+  - `t81-vm` `ecosystem-contract`: https://github.com/t81dev/t81-vm/actions/runs/21806842118
+  - `t81-lang` `ci`: https://github.com/t81dev/t81-lang/actions/runs/21806844336
+  - `t81-python` `CI`: https://github.com/t81dev/t81-python/actions/runs/21806844326
+  - `t81-docs` `Docs Validate`: https://github.com/t81dev/t81-docs/actions/runs/21806908191
+- Scope landed:
+  - contract version promoted to `2026-02-08-v5` with `compatibility_governance` metadata
+  - runtime tag `runtime-contract-v0.5` created and pushed
+  - downstream contract markers and pinned lanes synchronized to v0.5 baseline
+  - roadmap release/status/manifest automation refreshed for v0.5
+
 ## 2026-02-08 - Runtime Contract v0.4 Promotion
 
 - Promotion tracker: https://github.com/t81dev/t81-roadmap/issues/13

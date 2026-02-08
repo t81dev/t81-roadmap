@@ -47,7 +47,11 @@ def latest_workflow_run(repo: str, workflow_name: str) -> dict:
     with urlopen(req, timeout=20) as resp:
         payload = json.loads(resp.read().decode("utf-8"))
     runs = payload.get("workflow_runs", [])
-    matches = [run for run in runs if run.get("name") == workflow_name]
+    matches = [
+        run
+        for run in runs
+        if run.get("name") == workflow_name and (run.get("conclusion") or "").strip()
+    ]
     if not matches:
         return {
             "repo": repo,
@@ -84,7 +88,7 @@ def main() -> None:
     manifest = {
         "generated_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "runtime_contract": {
-            "tag": "runtime-contract-v0.4",
+            "tag": vm_marker.get("runtime_tag"),
             "contract_version": vm_contract.get("contract_version"),
             "vm_main_pin": vm_marker.get("vm_main_pin"),
         },
