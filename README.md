@@ -35,6 +35,7 @@ This repository is the canonical place to:
 
 - Refresh catalog locally: `scripts/sync_repositories.sh t81dev REPOSITORIES.md`
 - Weekly operational refresh (single command): `make ops-weekly` (or `scripts/ops-weekly.sh t81dev`)
+- Full Phase 5 dry run: `scripts/run_phase5_release_readiness_dry_run.sh`
 - Seed milestones/issues (after `gh auth login`): `scripts/bootstrap_milestones_and_issues.sh t81dev/t81-roadmap`
 - Regenerate migration dashboard: `scripts/generate_migration_dashboard.sh MIGRATION_DASHBOARD.md`
 - Regenerate runtime sync report: `scripts/generate_runtime_sync_report.sh RUNTIME_SYNC_REPORT.md`
@@ -48,6 +49,7 @@ This repository is the canonical place to:
 - Scheduled foundation intake workflow: `.github/workflows/foundation-rfc-intake.yml`
 - Scheduled release manifest workflow: `.github/workflows/release-manifest.yml`
 - Scheduled migration status workflow: `.github/workflows/migration-status.yml`
+- Scheduled Phase 5 release-readiness workflow: `.github/workflows/phase5-release-readiness.yml`
 - Weekly release cut records: `releases/*.md`
 
 ## Ecosystem Structure

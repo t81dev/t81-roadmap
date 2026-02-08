@@ -1,42 +1,40 @@
 # Phase 5 Release-Readiness Dry Run
 
 Date: 2026-02-08
-Type: operational dry run (no contract promotion)
+Type: automated operational dry run
 
 ## Scope
 
-Validate that Phase 5 release-readiness mechanics are runnable end-to-end:
+Validate weekly release-readiness mechanics end-to-end:
 
 1. weekly roadmap ops refresh,
-2. runtime contract compatibility gates,
-3. onboarding path sanity check,
-4. release-cut record publication.
+2. runtime compatibility contract checks,
+3. onboarding path sanity checks,
+4. dated release-cut record publication.
 
 ## Runtime Contract Baseline
 
 - Runtime tag: `runtime-contract-v0.5`
 - Contract version: `2026-02-08-v5`
 - VM pin: `4158a42156a085a2b722205be951576fc01969b9`
-- Manifest timestamp: `2026-02-08T23:53:30Z`
+- Manifest generated at: `2026-02-08T23:56:35Z`
 
 ## Executed Checks
 
-1. Weekly ops runbook:
-   - `make ops-weekly`
-   - regenerated: `REPOSITORIES.md`, `MIGRATION_DASHBOARD.md`, `RUNTIME_SYNC_REPORT.md`, `ECOSYSTEM_RELEASE_MANIFEST.json`, `MIGRATION_STATUS.md`, `MIGRATION_BLOCKERS.json`
-2. Runtime compatibility gates:
-   - `t81-lang`: `python3 scripts/check-vm-compat.py` -> pass
-   - `t81-python`: `python3 scripts/check-vm-contract.py` -> pass
-   - `t81-docs`: `python3 scripts/check-runtime-contract-sync.py` -> pass
-3. Onboarding path sanity:
-   - verified Stage-0/3/4 referenced roadmap artifacts exist (`onboarding_ref_check: ok`).
+1. `make ops-weekly`
+2. `t81-lang/scripts/check-vm-compat.py`
+3. `t81-python/scripts/check-vm-contract.py`
+4. `t81-docs/scripts/check-runtime-contract-sync.py`
+5. onboarding reference existence check (Stage 0/3/4 assets)
 
-## Current Migration Status Snapshot
+## Status Snapshot
 
-At dry-run cut time, `MIGRATION_STATUS.md` shows all tracked repos `green` with no blocking issues.
+- Dry-run completed at: `2026-02-08T23:56:26Z`
+- Migration status board: `MIGRATION_STATUS.md`
+- Blocker map: `MIGRATION_BLOCKERS.json`
 
 ## Follow-through
 
-1. Repeat this dry-run pattern weekly using `make ops-weekly`.
-2. Keep appending dated records under `releases/` for each weekly cut.
-3. Treat any non-green status in `MIGRATION_STATUS.md` as a release-readiness blocker until triaged.
+1. Keep this workflow scheduled weekly.
+2. Treat any non-green migration status as a release blocker.
+3. Keep publishing one dry-run record per run under `releases/`.

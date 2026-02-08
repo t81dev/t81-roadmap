@@ -1,0 +1,155 @@
+name: Phase5 Release Readiness
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 7 * * 1"
+
+jobs:
+  dry-run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Checkout t81-roadmap
+        uses: actions/checkout@v4
+        with:
+          path: t81-roadmap
+
+      - name: Checkout t81-vm
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-vm
+          path: t81-vm
+          ref: main
+
+      - name: Checkout t81-lang
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-lang
+          path: t81-lang
+          ref: main
+
+      - name: Checkout t81-python
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-python
+          path: t81-python
+          ref: main
+
+      - name: Checkout t81-docs
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-docs
+          path: t81-docs
+          ref: main
+
+      - name: Checkout t81-examples
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-examples
+          path: t81-examples
+          ref: main
+
+      - name: Checkout ternary-tools
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/ternary-tools
+          path: ternary-tools
+          ref: main
+
+      - name: Checkout ternary-pager
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/ternary-pager
+          path: ternary-pager
+          ref: main
+
+      - name: Checkout t81-benchmarks
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-benchmarks
+          path: t81-benchmarks
+          ref: main
+
+      - name: Ensure scripts executable
+        run: chmod +x scripts/*.sh
+        working-directory: t81-roadmap
+
+      - name: Run phase5 release-readiness dry run
+        id: dry_run
+        working-directory: t81-roadmap
+        run: scripts/run_phase5_release_readiness_dry_run.sh
+
+      - name: Commit and push dry-run updates
+        if: success()
+        working-directory: t81-roadmap
+        run: |
+          if git diff --quiet -- \
+            REPOSITORIES.md \
+            MIGRATION_DASHBOARD.md \
+            RUNTIME_SYNC_REPORT.md \
+            ECOSYSTEM_RELEASE_MANIFEST.json \
+            MIGRATION_STATUS.md \
+            MIGRATION_BLOCKERS.json \
+            releases/ \
+            ; then
+            echo "No dry-run artifact changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            REPOSITORIES.md \
+            MIGRATION_DASHBOARD.md \
+            RUNTIME_SYNC_REPORT.md \
+            ECOSYSTEM_RELEASE_MANIFEST.json \
+            MIGRATION_STATUS.md \
+            MIGRATION_BLOCKERS.json \
+            releases/
+          git commit -m "chore: automated phase5 release-readiness dry run"
+          git push origin HEAD:main
+
+      - name: Open failure issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const date = new Date().toISOString().slice(0, 10);
+            const titlePrefix = "Phase5 release-readiness automation failed";
+            const title = `${titlePrefix} (${date})`;
+
+            const open = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: "open",
+              per_page: 100
+            });
+
+            const existing = open.find((i) => i.title.includes(titlePrefix));
+            if (existing) {
+              core.info(`Failure issue already open: #${existing.number}`);
+              return;
+            }
+
+            const body = [
+              "Automated Phase 5 release-readiness dry run failed.",
+              "",
+              `- Workflow run: ${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`,
+              `- Commit: ${context.sha}`,
+              "",
+              "Follow-up checklist:",
+              "1. Inspect failing step logs.",
+              "2. Fix script/workflow or repo drift.",
+              "3. Re-run workflow and close this issue when green."
+            ].join("\n");
+
+            await github.rest.issues.create({
+              owner,
+              repo,
+              title,
+              body
+            });
