@@ -21,6 +21,7 @@ This repository is the canonical place to:
 - Migration Dashboard: `MIGRATION_DASHBOARD.md`
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
 - Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
+- Ecosystem Release Manifest: `ECOSYSTEM_RELEASE_MANIFEST.json`
 - Contribution Process: `CONTRIBUTING.md`
 
 ## Automation

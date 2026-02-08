@@ -1,0 +1,46 @@
+{
+  "generated_at_utc": "2026-02-08T22:02:00Z",
+  "runtime_contract": {
+    "tag": "runtime-contract-v0.4",
+    "contract_version": "2026-02-08-v4",
+    "vm_main_pin": "fc9d55eba258aa2d17d7778e29e186f0bf62e2d8"
+  },
+  "repo_pins": {
+    "t81-vm": "fc9d55e",
+    "t81-lang": "199b49c",
+    "t81-python": "8e4cfb1",
+    "t81-docs": "66b7a1f",
+    "t81-roadmap": "94e1489",
+    "t81-benchmarks": "3b9ac58"
+  },
+  "ci_evidence": [
+    {
+      "repo": "t81dev/t81-vm",
+      "workflow": "ecosystem-contract",
+      "conclusion": "success",
+      "run_url": "https://github.com/t81dev/t81-vm/actions/runs/21806065328",
+      "completed_at_utc": "2026-02-08T21:55:11Z"
+    },
+    {
+      "repo": "t81dev/t81-lang",
+      "workflow": "ci",
+      "conclusion": "success",
+      "run_url": "https://github.com/t81dev/t81-lang/actions/runs/21805815150",
+      "completed_at_utc": "2026-02-08T21:37:16Z"
+    },
+    {
+      "repo": "t81dev/t81-python",
+      "workflow": "CI",
+      "conclusion": "success",
+      "run_url": "https://github.com/t81dev/t81-python/actions/runs/21805815246",
+      "completed_at_utc": "2026-02-08T21:37:16Z"
+    },
+    {
+      "repo": "t81dev/t81-docs",
+      "workflow": "Docs Validate",
+      "conclusion": "success",
+      "run_url": "https://github.com/t81dev/t81-docs/actions/runs/21806140918",
+      "completed_at_utc": "2026-02-08T22:00:04Z"
+    }
+  ]
+}

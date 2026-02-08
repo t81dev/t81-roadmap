@@ -5,6 +5,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 OUT="${1:-${ROOT}/MIGRATION_DASHBOARD.md}"
 OWNER="${OWNER:-t81dev}"
 VM_DIR="${T81_VM_DIR:-${ROOT}/../t81-vm}"
+MANIFEST_FILE="${ROOT}/ECOSYSTEM_RELEASE_MANIFEST.json"
 
 CONTRACT_FILE="${VM_DIR}/docs/contracts/vm-compatibility.json"
 PARITY_FILE="${VM_DIR}/docs/parity-backlog.md"
@@ -36,6 +37,21 @@ vm_opcode_count="$(jq -r '.supported_opcodes | length' "${CONTRACT_FILE}")"
 vm_contract_pin="$(git -C "${VM_DIR}" rev-parse HEAD)"
 parity_evidence_schema="$(jq -r '.execution_mode_parity_evidence.schema_version // "unknown"' "${CONTRACT_FILE}")"
 parity_evidence_path="$(jq -r '.execution_mode_parity_evidence.artifact_path // "unknown"' "${CONTRACT_FILE}")"
+
+if [[ -f "${MANIFEST_FILE}" ]]; then
+  manifest_contract_version="$(jq -r '.runtime_contract.contract_version // empty' "${MANIFEST_FILE}")"
+  manifest_runtime_tag="$(jq -r '.runtime_contract.tag // empty' "${MANIFEST_FILE}")"
+  manifest_vm_pin="$(jq -r '.runtime_contract.vm_main_pin // empty' "${MANIFEST_FILE}")"
+  if [[ -n "${manifest_contract_version}" ]]; then
+    contract_version="${manifest_contract_version}"
+  fi
+  if [[ -n "${manifest_runtime_tag}" ]]; then
+    runtime_tag="${manifest_runtime_tag}"
+  fi
+  if [[ -n "${manifest_vm_pin}" ]]; then
+    vm_contract_pin="${manifest_vm_pin}"
+  fi
+fi
 
 parity_opcode_line="$(grep -m1 '^- Opcode coverage:' "${PARITY_FILE}" || true)"
 parity_test_line="$(grep -m1 '^- VM conformance tests' "${PARITY_FILE}" || true)"
@@ -91,11 +107,28 @@ failing=()
 for item in "${repos[@]}"; do
   repo="${item%%|*}"
   workflow="${item##*|}"
-  rec="$(latest_workflow "${repo}" "${workflow}")"
-  conclusion="${rec%%|*}"
-  rest="${rec#*|}"
-  run_url="${rest%%|*}"
-  run_time="${rest##*|}"
+  if [[ -f "${MANIFEST_FILE}" ]]; then
+    manifest_row="$(jq -r --arg repo "${repo}" --arg wf "${workflow}" '
+      .ci_evidence
+      | map(select(.repo == $repo and .workflow == $wf))
+      | .[0]
+      | if . == null then "" else "\(.conclusion)|\(.run_url)|\(.completed_at_utc)" end
+    ' "${MANIFEST_FILE}")"
+  else
+    manifest_row=""
+  fi
+  if [[ -n "${manifest_row}" ]]; then
+    conclusion="${manifest_row%%|*}"
+    rest="${manifest_row#*|}"
+    run_url="${rest%%|*}"
+    run_time="${rest##*|}"
+  else
+    rec="$(latest_workflow "${repo}" "${workflow}")"
+    conclusion="${rec%%|*}"
+    rest="${rec#*|}"
+    run_url="${rest%%|*}"
+    run_time="${rest##*|}"
+  fi
 
   if [[ -z "${run_time}" ]]; then
     run_time="n/a"

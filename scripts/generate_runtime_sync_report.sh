@@ -6,6 +6,7 @@ OUT="${1:-${ROOT}/RUNTIME_SYNC_REPORT.md}"
 VM_DIR="${T81_VM_DIR:-${ROOT}/../t81-vm}"
 LANG_DIR="${T81_LANG_DIR:-${ROOT}/../t81-lang}"
 PY_DIR="${T81_PYTHON_DIR:-${ROOT}/../t81-python}"
+MANIFEST_FILE="${ROOT}/ECOSYSTEM_RELEASE_MANIFEST.json"
 
 for req in "${VM_DIR}" "${LANG_DIR}" "${PY_DIR}"; do
   if [[ ! -d "${req}" ]]; then
@@ -17,6 +18,12 @@ done
 snapshot_date="$(date -u +"%Y-%m-%d")"
 snapshot_time="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 vm_pin="$(git -C "${VM_DIR}" rev-parse --short HEAD)"
+if [[ -f "${MANIFEST_FILE}" ]]; then
+  manifest_vm_pin="$(jq -r '.repo_pins["t81-vm"] // empty' "${MANIFEST_FILE}")"
+  if [[ -n "${manifest_vm_pin}" ]]; then
+    vm_pin="${manifest_vm_pin}"
+  fi
+fi
 
 read_contract_field() {
   local expr="$1"
@@ -44,6 +51,12 @@ contract_version="$(read_contract_field contract_version)"
 opcode_count="$(read_contract_field opcode_count)"
 abi_version="$(read_contract_field abi_version)"
 parity_artifact_path="$(read_contract_field parity_artifact_path)"
+if [[ -f "${MANIFEST_FILE}" ]]; then
+  manifest_contract_version="$(jq -r '.runtime_contract.contract_version // empty' "${MANIFEST_FILE}")"
+  if [[ -n "${manifest_contract_version}" ]]; then
+    contract_version="${manifest_contract_version}"
+  fi
+fi
 
 declare -a rows=()
 failures=0
