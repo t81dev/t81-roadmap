@@ -84,3 +84,4 @@ Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 - Cross-repo changes require linked issues in all affected repos.
 - Claims about performance require reproducible benchmark artifacts.
 - Promotion between phases requires meeting the tier criteria in `STATUS.md`.
+- VM/runtime contract changes require a version/tag bump in `t81-vm` and synchronized compatibility updates in `t81-lang` and `t81-python`.
