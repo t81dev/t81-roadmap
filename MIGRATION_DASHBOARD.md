@@ -22,10 +22,11 @@ Snapshot date: 2026-02-08.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
-| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21806065328) | 2026-02-08T21:55:11Z |
-| `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21805815150) | 2026-02-08T21:37:16Z |
-| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21805815246) | 2026-02-08T21:37:16Z |
-| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21806140918) | 2026-02-08T22:00:04Z |
+| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21806618804) | 2026-02-08T22:34:20Z |
+| `t81dev/t81-vm` | `ecosystem-compat-matrix` | unknown | n/a |
+| `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21806607806) | 2026-02-08T22:34:58Z |
+| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21806603619) | 2026-02-08T22:34:23Z |
+| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21806605410) | 2026-02-08T22:33:01Z |
 
 ## Failing Checks
 

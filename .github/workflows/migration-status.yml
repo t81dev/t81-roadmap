@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
     steps:
       - name: Checkout t81-roadmap
         uses: actions/checkout@v4
@@ -76,6 +77,12 @@ jobs:
         working-directory: t81-roadmap
         run: python3 scripts/generate_ecosystem_release_manifest.py
 
+      - name: Sync migration blocker issues
+        working-directory: t81-roadmap
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/sync_migration_blockers.py
+
       - name: Generate migration status board
         working-directory: t81-roadmap
         run: python3 scripts/generate_migration_status.py
@@ -83,12 +90,12 @@ jobs:
       - name: Commit and push migration status updates
         working-directory: t81-roadmap
         run: |
-          if git diff --quiet -- ECOSYSTEM_RELEASE_MANIFEST.json MIGRATION_STATUS.md; then
+          if git diff --quiet -- ECOSYSTEM_RELEASE_MANIFEST.json MIGRATION_BLOCKERS.json MIGRATION_STATUS.md; then
             echo "No migration status changes detected."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ECOSYSTEM_RELEASE_MANIFEST.json MIGRATION_STATUS.md
+          git add ECOSYSTEM_RELEASE_MANIFEST.json MIGRATION_BLOCKERS.json MIGRATION_STATUS.md
           git commit -m "chore: refresh migration status board"
           git push origin HEAD:main

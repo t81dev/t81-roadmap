@@ -97,6 +97,7 @@ latest_workflow() {
 
 repos=(
   "${OWNER}/t81-vm|ecosystem-contract"
+  "${OWNER}/t81-vm|ecosystem-compat-matrix"
   "${OWNER}/t81-lang|ci"
   "${OWNER}/t81-python|CI"
   "${OWNER}/t81-docs|Docs Validate"

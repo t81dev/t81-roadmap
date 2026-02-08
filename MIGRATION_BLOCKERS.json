@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-02-08T22:44:08Z",
+  "blockers": {
+    "t81-vm": "none",
+    "t81-lang": "none",
+    "t81-python": "none",
+    "t81-docs": "none",
+    "t81-examples": "none",
+    "ternary-tools": "none",
+    "ternary-pager": "none",
+    "t81-benchmarks": "none",
+    "t81-roadmap": "none"
+  }
+}

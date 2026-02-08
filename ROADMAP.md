@@ -32,7 +32,7 @@ Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constr
 - [ ] Freeze terminology across `t81-foundation`, `duotronic-whitepaper`, and `t81-docs`.
 - [ ] Define a single source of truth for formal vs interpretive docs.
 - [x] Establish reproducible benchmark protocol in `t81-benchmarks`.
-- [ ] Establish monthly benchmark publication cadence in `t81-benchmarks` (tracker: `#17`).
+- [x] Establish monthly benchmark publication cadence in `t81-benchmarks` (tracker: `#17`).
 - [ ] Publish ecosystem constraint register in `t81-constraints`.
 
 ## Phase 1: Core Stack Stabilization
@@ -49,19 +49,20 @@ Owner cluster: `t81-foundation`, `t81-vm`, `t81lib`, `t81-python`, `ternary_gcc_
 
 Owner cluster: `t81-docs`, `t81-examples`, `ternary-tools`, `ternary-pager`
 
-- [ ] Expand end-to-end samples in `t81-examples` (tracker: `#15`).
-- [ ] Build unified docs navigation in `t81-docs` (tracker: `#15`).
-- [ ] Add inspection/debug workflows via `ternary-tools` and `ternary-pager` (tracker: `#15`).
+- [x] Expand end-to-end samples in `t81-examples` (tracker: `#15`).
+- [x] Build unified docs navigation in `t81-docs` (tracker: `#15`).
+- [x] Add inspection/debug workflows via `ternary-tools` and `ternary-pager` (tracker: `#15`).
 - [ ] Publish migration guides from binary-first systems.
 
 ## Phase 3: Hardware and Systems Prototyping
 
 Owner cluster: `t81-hardware`, `ternary-fabric`, `ternary-memory-research`
+Milestone matrix: `PHASE3_MILESTONE_MATRIX.md`
 
-- [ ] Define simulation milestones in `t81-hardware` (tracker: `#16`).
-- [ ] Connect memory/interconnect experiments from `ternary-fabric` (tracker: `#16`).
-- [ ] Validate memory hypotheses in `ternary-memory-research` (tracker: `#16`).
-- [ ] Specify software-hardware co-design checkpoints (tracker: `#16`).
+- [x] Define simulation milestones in `t81-hardware` (tracker: `#16`).
+- [x] Connect memory/interconnect experiments from `ternary-fabric` (tracker: `#16`).
+- [x] Validate memory hypotheses in `ternary-memory-research` (tracker: `#16`).
+- [x] Specify software-hardware co-design checkpoints (tracker: `#16`).
 
 ## Phase 4: Security and Applied Domains
 

@@ -52,12 +52,17 @@ def main() -> None:
     code_root = (root / "..").resolve()
     manifest = read_json(root / "ECOSYSTEM_RELEASE_MANIFEST.json")
     expected_contract_version = str(manifest["runtime_contract"]["contract_version"])
+    blocker_file = root / "MIGRATION_BLOCKERS.json"
+    blocker_map = BLOCKER_MAP
+    if blocker_file.exists():
+        blocker_data = read_json(blocker_file)
+        blocker_map = {**BLOCKER_MAP, **blocker_data.get("blockers", {})}
 
     rows = []
     for repo, sha in manifest["repo_pins"].items():
         status = marker_status(code_root, repo, expected_contract_version)
         rows.append(
-            f"| `{repo}` | {status} | {OWNER_MAP.get(repo, 'TBD')} | `{sha[:12]}` | {BLOCKER_MAP.get(repo, 'none')} |"
+            f"| `{repo}` | {status} | {OWNER_MAP.get(repo, 'TBD')} | `{sha[:12]}` | {blocker_map.get(repo, 'none')} |"
         )
 
     lines = [
@@ -72,6 +77,7 @@ def main() -> None:
         *rows,
         "",
         "Source of truth: `ECOSYSTEM_RELEASE_MANIFEST.json`.",
+        "Blocker map source: `MIGRATION_BLOCKERS.json`.",
     ]
 
     out = root / "MIGRATION_STATUS.md"

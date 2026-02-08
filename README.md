@@ -16,10 +16,12 @@ This repository is the canonical place to:
 ## Start Here
 
 - Roadmap: `ROADMAP.md`
+- Phase 3 Milestone Matrix: `PHASE3_MILESTONE_MATRIX.md`
 - Repository Catalog: `REPOSITORIES.md`
 - Current Status Board: `STATUS.md`
 - Migration Dashboard: `MIGRATION_DASHBOARD.md`
 - Migration Status Board: `MIGRATION_STATUS.md`
+- Migration Blocker Map: `MIGRATION_BLOCKERS.json`
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
 - Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
 - Ecosystem Release Manifest: `ECOSYSTEM_RELEASE_MANIFEST.json`
@@ -33,6 +35,7 @@ This repository is the canonical place to:
 - Regenerate runtime sync report: `scripts/generate_runtime_sync_report.sh RUNTIME_SYNC_REPORT.md`
 - Regenerate release manifest: `python3 scripts/generate_ecosystem_release_manifest.py`
 - Regenerate migration status board: `python3 scripts/generate_migration_status.py`
+- Sync migration blockers: `python3 scripts/sync_migration_blockers.py`
 - Run foundation spec/RFC intake: `scripts/intake_foundation_spec_changes.sh`
 - Scheduled catalog sync workflow: `.github/workflows/sync-repositories.yml`
 - Scheduled dashboard refresh workflow: `.github/workflows/update-migration-dashboard.yml`
@@ -40,6 +43,7 @@ This repository is the canonical place to:
 - Scheduled foundation intake workflow: `.github/workflows/foundation-rfc-intake.yml`
 - Scheduled release manifest workflow: `.github/workflows/release-manifest.yml`
 - Scheduled migration status workflow: `.github/workflows/migration-status.yml`
+- Weekly release cut records: `releases/*.md`
 
 ## Ecosystem Structure
 
