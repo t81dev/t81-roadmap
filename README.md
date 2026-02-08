@@ -17,6 +17,7 @@ This repository is the canonical place to:
 
 - Roadmap: `ROADMAP.md`
 - Phase 3 Milestone Matrix: `PHASE3_MILESTONE_MATRIX.md`
+- Phase 4 Security Matrix: `PHASE4_SECURITY_MATRIX.md`
 - Repository Catalog: `REPOSITORIES.md`
 - Current Status Board: `STATUS.md`
 - Migration Dashboard: `MIGRATION_DASHBOARD.md`

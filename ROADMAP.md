@@ -67,10 +67,11 @@ Milestone matrix: `PHASE3_MILESTONE_MATRIX.md`
 ## Phase 4: Security and Applied Domains
 
 Owner cluster: `trinity`, `trinity-decrypt`, `trinity-pow`, `t81-benchmarks`
+Milestone matrix: `PHASE4_SECURITY_MATRIX.md`
 
-- [ ] Formalize evaluation plan for `trinity` suite projects.
-- [ ] Align crypto experiments with benchmark framework.
-- [ ] Add threat-model notes and limits to docs.
+- [x] Formalize evaluation plan for `trinity` suite projects.
+- [x] Align crypto experiments with benchmark framework.
+- [x] Add threat-model notes and limits to docs.
 
 ## Phase 5: Public Release Readiness
 
