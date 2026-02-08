@@ -94,11 +94,23 @@ Use this section for recurring updates.
 - Maturity movement: migration moved from execution-in-progress to governance-complete for Phase 0/1.
 - Next actions: sustain weekly ops runbook and monthly benchmark publication cadence.
 
+### 2026-02-08 (Phase 3 Evidence Pass)
+
+- Scope: completed Phase 3 evidence audit and normalized duplicate issue tracks in hardware/system repos.
+- Repos touched: `t81-hardware`, `ternary-fabric`, `ternary-memory-research`, `t81-roadmap`.
+- Risks discovered: primary near-term risk is artifact staleness over time (not missing Phase 3 tracking structure).
+- Evidence added:
+  - `t81-hardware` commit `824ecf0` (`docs/phase3-milestone-ladder.md`)
+  - `ternary-fabric` commit `a020480` (`docs/PHASE3_INTEGRATION_HANDOFF.md`)
+  - `ternary-memory-research` commit `28c8acc` (`docs/phase3-hypothesis-matrix.md`)
+- Maturity movement: Phase 3 moved from kickoff-only tracking to explicit reproducible artifact/checkpoint documentation in all scoped repos.
+- Next actions: maintain artifact freshness during weekly ops rhythm and attach new evidence runs before future phase promotions.
+
 ## Pending Coordination Items
 
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
 - Triage new `rfc-intake` issues generated from `t81-foundation/spec` changes.
-- Keep `PHASE3_MILESTONE_MATRIX.md` linked issues moving and attach evidence artifacts as they land.
+- Keep Phase 3 evidence artifacts refreshed and linked from `PHASE3_MILESTONE_MATRIX.md` as new runs land.
 - Keep `PHASE4_SECURITY_MATRIX.md` linked issues moving and attach threat/benchmark evidence artifacts as they land.
 - Keep monthly publication bundles current in `t81-benchmarks/publications/`.
 - Keep weekly ecosystem release-cut records current under `releases/`.
