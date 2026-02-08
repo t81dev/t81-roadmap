@@ -34,6 +34,7 @@ This repository is the canonical place to:
 ## Automation
 
 - Refresh catalog locally: `scripts/sync_repositories.sh t81dev REPOSITORIES.md`
+- Weekly operational refresh (single command): `make ops-weekly` (or `scripts/ops-weekly.sh t81dev`)
 - Seed milestones/issues (after `gh auth login`): `scripts/bootstrap_milestones_and_issues.sh t81dev/t81-roadmap`
 - Regenerate migration dashboard: `scripts/generate_migration_dashboard.sh MIGRATION_DASHBOARD.md`
 - Regenerate runtime sync report: `scripts/generate_runtime_sync_report.sh RUNTIME_SYNC_REPORT.md`

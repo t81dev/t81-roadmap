@@ -40,11 +40,11 @@ Snapshot date: February 8, 2026.
 
 | Cluster | Primary Repos | Steward | Backup |
 | --- | --- | --- | --- |
-| Specs and Constraints | `t81-foundation`, `duotronic-whitepaper`, `t81-constraints` | `@t81dev` | `TBD` |
-| Runtime and Quantization | `t81-vm`, `t81lib`, `ternary`, `t81-python`, `ternary_gcc_plugin` | `@t81dev` | `TBD` |
-| Tooling and Docs | `t81-docs`, `t81-examples`, `ternary-tools`, `t81-roadmap` | `@t81dev` | `TBD` |
-| Hardware and Systems | `t81-hardware`, `ternary-fabric`, `ternary-memory-research` | `@t81dev` | `TBD` |
-| Crypto Experiments | `trinity`, `trinity-decrypt`, `trinity-pow` | `@t81dev` | `TBD` |
+| Specs and Constraints | `t81-foundation`, `duotronic-whitepaper`, `t81-constraints` | `@t81dev` | `@t81dev (interim)` |
+| Runtime and Quantization | `t81-vm`, `t81lib`, `ternary`, `t81-python`, `ternary_gcc_plugin` | `@t81dev` | `@t81dev (interim)` |
+| Tooling and Docs | `t81-docs`, `t81-examples`, `ternary-tools`, `t81-roadmap` | `@t81dev` | `@t81dev (interim)` |
+| Hardware and Systems | `t81-hardware`, `ternary-fabric`, `ternary-memory-research` | `@t81dev` | `@t81dev (interim)` |
+| Crypto Experiments | `trinity`, `trinity-decrypt`, `trinity-pow` | `@t81dev` | `@t81dev (interim)` |
 
 ## Current Focus Areas
 
@@ -85,9 +85,17 @@ Use this section for recurring updates.
 - Maturity movement: Phase 1 runtime-boundary and Python-bridge governance checkpoints advanced; remaining work is implementation-heavy in non-local repos.
 - Next actions: execute `t81lib#1`, `ternary_gcc_plugin#1`, `t81-constraints#1`, and whitepaper terminology alignment issue before proposing Phase 0/1 closure.
 
+### 2026-02-08 (Phase 0/1 Migration Closeout)
+
+- Scope: formally closed Phase 0 and Phase 1 migration checklists with cross-repo implementation evidence.
+- Repos touched: `t81-roadmap`, `t81-docs`, `t81-foundation`, `t81-python`, `t81lib`, `ternary_gcc_plugin`, `t81-constraints`, `duotronic-whitepaper`, `t81-benchmarks`.
+- Risks discovered: remaining risk is operational drift (weekly status hygiene and monthly publication discipline), not unresolved migration parity scope.
+- Evidence added: closure of `t81-roadmap#1` and `t81-roadmap#2`, plus closeout release record in `releases/2026-02-08-migration-phase0-1-closeout.md`.
+- Maturity movement: migration moved from execution-in-progress to governance-complete for Phase 0/1.
+- Next actions: sustain weekly ops runbook and monthly benchmark publication cadence.
+
 ## Pending Coordination Items
 
-- Fill backup owners in owner map.
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
 - Triage new `rfc-intake` issues generated from `t81-foundation/spec` changes.
 - Keep `PHASE3_MILESTONE_MATRIX.md` linked issues moving and attach evidence artifacts as they land.
