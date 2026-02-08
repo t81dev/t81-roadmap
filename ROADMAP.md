@@ -30,11 +30,11 @@ Snapshot date: February 8, 2026.
 Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constraints`, `t81-benchmarks`
 Milestone matrix: `PHASE0_ALIGNMENT_MATRIX.md`
 
-- [ ] Freeze terminology across `t81-foundation`, `duotronic-whitepaper`, and `t81-docs`.
-- [ ] Define a single source of truth for formal vs interpretive docs.
+- [x] Freeze terminology across `t81-foundation`, `duotronic-whitepaper`, and `t81-docs`.
+- [x] Define a single source of truth for formal vs interpretive docs.
 - [x] Establish reproducible benchmark protocol in `t81-benchmarks`.
 - [x] Establish monthly benchmark publication cadence in `t81-benchmarks` (tracker: `#17`).
-- [ ] Publish ecosystem constraint register in `t81-constraints`.
+- [x] Publish ecosystem constraint register in `t81-constraints`.
 
 ## Phase 1: Core Stack Stabilization
 
