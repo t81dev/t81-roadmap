@@ -20,14 +20,13 @@ Snapshot date: 2026-02-08.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
-| `t81dev/t81-vm` | `ecosystem-contract` | [failure](https://github.com/t81dev/t81-vm/actions/runs/21802456634) | 2026-02-08T17:40:01Z |
+| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21802505156) | 2026-02-08T17:43:33Z |
 | `t81dev/t81-lang` | `ci` | [failure](https://github.com/t81dev/t81-lang/actions/runs/21802456750) | 2026-02-08T17:40:02Z |
 | `t81dev/t81-python` | `CI` | [failure](https://github.com/t81dev/t81-python/actions/runs/21802456602) | 2026-02-08T17:40:01Z |
 | `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21802456600) | 2026-02-08T17:40:01Z |
 
 ## Failing Checks
 
-- `t81dev/t81-vm` / `ecosystem-contract`: failure
 - `t81dev/t81-lang` / `ci`: failure
 - `t81dev/t81-python` / `CI`: failure
 
