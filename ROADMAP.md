@@ -43,8 +43,8 @@ Milestone matrix: `PHASE1_STABILIZATION_MATRIX.md`
 
 - [x] Lock core runtime semantics in `t81-foundation`.
 - [x] Lock executable VM contract and trap/opcode registry in `t81-vm`.
-- [ ] Harden arithmetic and quantization primitives in `t81lib`.
-- [ ] Validate GCC plugin ABI contract in `ternary_gcc_plugin`.
+- [x] Harden arithmetic and quantization primitives in `t81lib`.
+- [x] Validate GCC plugin ABI contract in `ternary_gcc_plugin`.
 - [x] Document and verify `t81-python` bridge to `t81-vm` host ABI.
 
 ## Phase 2: Tooling and Developer Experience
