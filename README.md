@@ -16,6 +16,8 @@ This repository is the canonical place to:
 ## Start Here
 
 - Roadmap: `ROADMAP.md`
+- Phase 0 Alignment Matrix: `PHASE0_ALIGNMENT_MATRIX.md`
+- Phase 1 Stabilization Matrix: `PHASE1_STABILIZATION_MATRIX.md`
 - Phase 3 Milestone Matrix: `PHASE3_MILESTONE_MATRIX.md`
 - Phase 4 Security Matrix: `PHASE4_SECURITY_MATRIX.md`
 - Repository Catalog: `REPOSITORIES.md`

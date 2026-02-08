@@ -28,6 +28,7 @@ Snapshot date: February 8, 2026.
 ## Phase 0: Alignment and Baselines
 
 Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constraints`, `t81-benchmarks`
+Milestone matrix: `PHASE0_ALIGNMENT_MATRIX.md`
 
 - [ ] Freeze terminology across `t81-foundation`, `duotronic-whitepaper`, and `t81-docs`.
 - [ ] Define a single source of truth for formal vs interpretive docs.
@@ -38,6 +39,7 @@ Owner cluster: `t81-foundation`, `duotronic-whitepaper`, `t81-docs`, `t81-constr
 ## Phase 1: Core Stack Stabilization
 
 Owner cluster: `t81-foundation`, `t81-vm`, `t81lib`, `t81-python`, `ternary_gcc_plugin`
+Milestone matrix: `PHASE1_STABILIZATION_MATRIX.md`
 
 - [ ] Lock core runtime semantics in `t81-foundation`.
 - [x] Lock executable VM contract and trap/opcode registry in `t81-vm`.
