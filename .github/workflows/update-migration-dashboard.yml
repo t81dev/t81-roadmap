@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
 
     steps:
       - name: Checkout t81-roadmap
@@ -33,12 +32,15 @@ jobs:
           OWNER: t81dev
           T81_VM_DIR: ${{ github.workspace }}/t81-vm
 
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          path: t81-roadmap
-          commit-message: "chore: refresh migration dashboard"
-          branch: "chore/refresh-migration-dashboard"
-          title: "chore: refresh migration dashboard"
-          body: |
-            Automated refresh of `MIGRATION_DASHBOARD.md`.
+      - name: Commit and push dashboard updates
+        working-directory: t81-roadmap
+        run: |
+          if git diff --quiet -- MIGRATION_DASHBOARD.md; then
+            echo "No dashboard changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add MIGRATION_DASHBOARD.md
+          git commit -m "chore: refresh migration dashboard"
+          git push origin HEAD:main

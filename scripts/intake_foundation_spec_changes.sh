@@ -27,16 +27,12 @@ ensure_label() {
   local color="$2"
   local description="$3"
 
-  if gh label view "${name}" --repo "${ROADMAP_REPO}" >/dev/null 2>&1; then
-    return
-  fi
-
   if [[ "${DRY_RUN}" == "1" ]]; then
-    echo "DRY_RUN: would create label: ${name}"
+    echo "DRY_RUN: would ensure label: ${name}"
     return
   fi
 
-  gh label create "${name}" --repo "${ROADMAP_REPO}" --color "${color}" --description "${description}" >/dev/null
+  gh label create "${name}" --repo "${ROADMAP_REPO}" --color "${color}" --description "${description}" --force >/dev/null
 }
 
 ensure_issue() {
