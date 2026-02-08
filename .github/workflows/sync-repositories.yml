@@ -1,0 +1,31 @@
+name: Sync Repository Catalog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Sync catalog
+        run: |
+          chmod +x scripts/sync_repositories.sh
+          scripts/sync_repositories.sh t81dev REPOSITORIES.md
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: sync repository catalog"
+          branch: "chore/sync-repository-catalog"
+          title: "chore: sync repository catalog"
+          body: |
+            Automated refresh of `REPOSITORIES.md` from the GitHub API.
