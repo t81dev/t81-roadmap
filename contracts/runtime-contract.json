@@ -1,0 +1,7 @@
+{
+  "runtime_tag": "runtime-contract-v0.4",
+  "contract_version": "2026-02-08-v4",
+  "vm_main_pin": "fc9d55eba258aa2d17d7778e29e186f0bf62e2d8",
+  "contract_source": "https://github.com/t81dev/t81-vm/blob/main/docs/contracts/vm-compatibility.json",
+  "owner": "t81-roadmap"
+}

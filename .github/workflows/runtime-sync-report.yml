@@ -54,6 +54,18 @@ jobs:
           T81_LANG_DIR: ${{ github.workspace }}/t81-lang
           T81_PYTHON_DIR: ${{ github.workspace }}/t81-python
 
+      - name: Validate roadmap runtime contract marker
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          repo = json.loads(Path("t81-roadmap/contracts/runtime-contract.json").read_text(encoding="utf-8"))
+          vm = json.loads(Path("t81-vm/docs/contracts/vm-compatibility.json").read_text(encoding="utf-8"))
+          if repo.get("contract_version") != vm.get("contract_version"):
+              raise SystemExit("contract_version mismatch between t81-roadmap and t81-vm")
+          print("runtime contract marker: ok")
+          PY
+
       - name: Commit and push runtime sync report
         working-directory: t81-roadmap
         run: |

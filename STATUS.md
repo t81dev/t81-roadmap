@@ -52,6 +52,7 @@ Snapshot date: February 8, 2026.
 - Benchmark reproducibility and publication hygiene.
 - Spec/runtime boundary clarity (`t81-foundation` -> `t81-vm` execution contract split).
 - Hardware simulation path definition.
+- Runtime contract drift prevention via `MIGRATION_STATUS.md` and release-manifest cadence.
 
 ## Tracking Template
 

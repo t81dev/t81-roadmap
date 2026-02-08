@@ -19,6 +19,7 @@ This repository is the canonical place to:
 - Repository Catalog: `REPOSITORIES.md`
 - Current Status Board: `STATUS.md`
 - Migration Dashboard: `MIGRATION_DASHBOARD.md`
+- Migration Status Board: `MIGRATION_STATUS.md`
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
 - Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
 - Ecosystem Release Manifest: `ECOSYSTEM_RELEASE_MANIFEST.json`
@@ -30,11 +31,15 @@ This repository is the canonical place to:
 - Seed milestones/issues (after `gh auth login`): `scripts/bootstrap_milestones_and_issues.sh t81dev/t81-roadmap`
 - Regenerate migration dashboard: `scripts/generate_migration_dashboard.sh MIGRATION_DASHBOARD.md`
 - Regenerate runtime sync report: `scripts/generate_runtime_sync_report.sh RUNTIME_SYNC_REPORT.md`
+- Regenerate release manifest: `python3 scripts/generate_ecosystem_release_manifest.py`
+- Regenerate migration status board: `python3 scripts/generate_migration_status.py`
 - Run foundation spec/RFC intake: `scripts/intake_foundation_spec_changes.sh`
 - Scheduled catalog sync workflow: `.github/workflows/sync-repositories.yml`
 - Scheduled dashboard refresh workflow: `.github/workflows/update-migration-dashboard.yml`
 - Scheduled runtime sync workflow: `.github/workflows/runtime-sync-report.yml`
 - Scheduled foundation intake workflow: `.github/workflows/foundation-rfc-intake.yml`
+- Scheduled release manifest workflow: `.github/workflows/release-manifest.yml`
+- Scheduled migration status workflow: `.github/workflows/migration-status.yml`
 
 ## Ecosystem Structure
 

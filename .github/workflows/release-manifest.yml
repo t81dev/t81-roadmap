@@ -1,0 +1,90 @@
+name: Release Manifest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 6 * * 1"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout t81-roadmap
+        uses: actions/checkout@v4
+        with:
+          path: t81-roadmap
+
+      - name: Checkout t81-vm
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-vm
+          path: t81-vm
+          ref: main
+
+      - name: Checkout t81-lang
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-lang
+          path: t81-lang
+          ref: main
+
+      - name: Checkout t81-python
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-python
+          path: t81-python
+          ref: main
+
+      - name: Checkout t81-docs
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-docs
+          path: t81-docs
+          ref: main
+
+      - name: Checkout t81-examples
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-examples
+          path: t81-examples
+          ref: main
+
+      - name: Checkout ternary-tools
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/ternary-tools
+          path: ternary-tools
+          ref: main
+
+      - name: Checkout ternary-pager
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/ternary-pager
+          path: ternary-pager
+          ref: main
+
+      - name: Checkout t81-benchmarks
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-benchmarks
+          path: t81-benchmarks
+          ref: main
+
+      - name: Generate release manifest
+        working-directory: t81-roadmap
+        run: python3 scripts/generate_ecosystem_release_manifest.py
+
+      - name: Commit and push release manifest
+        working-directory: t81-roadmap
+        run: |
+          if git diff --quiet -- ECOSYSTEM_RELEASE_MANIFEST.json; then
+            echo "No release manifest changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ECOSYSTEM_RELEASE_MANIFEST.json
+          git commit -m "chore: refresh ecosystem release manifest"
+          git push origin HEAD:main
