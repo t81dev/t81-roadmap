@@ -7,9 +7,9 @@ Snapshot date: 2026-02-08.
 - Canonical owner: `t81-vm`
 - Contract file: `t81-vm/docs/contracts/vm-compatibility.json`
 - Contract version: `2026-02-08-v2`
-- Latest tagged contract baseline: `runtime-contract-v0.1`
-- Current migration contract pin (`t81-vm/main`): `30306b3`
-- `runtime-contract-v0.2` status: prepared, not tagged
+- Active tagged contract baseline: `runtime-contract-v0.2`
+- Current migration contract pin (`t81-vm/main`): `30306b32eea8b7acde1be354ed10d24881989225`
+- `runtime-contract-v0.2` status: tagged and active
 - Supported opcode count: `81`
 
 ## VM Parity
