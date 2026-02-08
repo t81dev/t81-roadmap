@@ -8,12 +8,13 @@ Snapshot date: 2026-02-08.
 - Contract file: `t81-vm/docs/contracts/vm-compatibility.json`
 - Contract version: `2026-02-08`
 - Contract tag baseline: `runtime-contract-v0.1`
-- Supported opcode count: `39`
+- Contract commit pin (`t81-vm/main`): `23a1003`
+- Supported opcode count: `81`
 
 ## VM Parity
 
-- Opcode coverage: `39` (`t81-vm`) vs `81` (`t81-foundation`)
-- VM conformance tests: `10` (`t81-vm`) vs `13` (`t81-foundation`)
+- Opcode coverage: `81` (`t81-vm`) vs `81` (`t81-foundation`)
+- VM conformance tests: `13` (`t81-vm`) vs `13` (`t81-foundation`)
 - Source of parity backlog: `t81-vm/docs/parity-backlog.md`
 
 ## Cross-Repo Contract CI

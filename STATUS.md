@@ -66,6 +66,15 @@ Use this section for recurring updates.
 - Maturity movement: cross-repo contract governance moved from ad hoc updates to enforced automation.
 - Next actions: execute VM parity P0 milestone (`Migration Parity P0`) and reduce `t81-lang` runtime-coupled manifest.
 
+### 2026-02-08 (Parity Closeout)
+
+- Scope: Runtime parity closeout and cross-repo contract synchronization.
+- Repos touched: `t81-vm`, `t81-lang`, `t81-python`, `t81-docs`, `t81-roadmap`, `t81-foundation`.
+- Risks discovered: primary parity risk is closed; remaining risk moved to ABI/version governance drift.
+- Evidence added: `t81-vm` parity commits `23a1003` (opcode/test parity) and `8df1c47` (`.gitignore` hygiene), canary and compatibility gates passing.
+- Maturity movement: VM migration moved from partial parity to full opcode/test parity (`81/81`, `13/13`).
+- Next actions: pin baseline in downstream docs and maintain compatibility matrix discipline on every runtime contract change.
+
 ## Pending Coordination Items
 
 - Fill backup owners in owner map.
