@@ -6,9 +6,9 @@ Snapshot date: 2026-02-08.
 
 - Canonical owner: `t81-vm`
 - Contract file: `t81-vm/docs/contracts/vm-compatibility.json`
-- Contract version: `2026-02-08-v3`
-- Active tagged contract baseline: `runtime-contract-v0.3`
-- Contract commit pin (`t81-vm/main`): `b04ce028f13512833c5bc37bd263293c536dd496`
+- Contract version: `2026-02-08-v4`
+- Active tagged contract baseline: `runtime-contract-v0.4`
+- Contract commit pin (`t81-vm/main`): `16b352b36be2308a6950d4ccd9a156d5eadb021f`
 - Supported opcode count: `81`
 - Execution-mode parity evidence: `build/mode-parity/parity-evidence.json` (`parity-evidence-v1`)
 
@@ -22,10 +22,10 @@ Snapshot date: 2026-02-08.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
-| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21805640049) | 2026-02-08T21:24:52Z |
-| `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21805053808) | 2026-02-08T20:44:05Z |
-| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21804911368) | 2026-02-08T20:33:35Z |
-| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21805693375) | 2026-02-08T21:28:35Z |
+| `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21805869279) | 2026-02-08T21:40:58Z |
+| `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21805815150) | 2026-02-08T21:37:16Z |
+| `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21805815246) | 2026-02-08T21:37:16Z |
+| `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21805815242) | 2026-02-08T21:37:16Z |
 
 ## Failing Checks
 
