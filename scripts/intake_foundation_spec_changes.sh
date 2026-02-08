@@ -39,7 +39,7 @@ ensure_issue() {
   local title="$1"
   local body="$2"
 
-  if gh issue list --repo "${ROADMAP_REPO}" --state all --search "in:title \"${title}\"" --json title --jq '.[].title' | rg -Fx "${title}" >/dev/null 2>&1; then
+  if gh issue list --repo "${ROADMAP_REPO}" --state all --limit 200 --json title --jq --arg title "${title}" '.[] | select(.title == $title) | .title' | grep -Fx "${title}" >/dev/null 2>&1; then
     echo "Issue exists: ${title}"
     return
   fi
