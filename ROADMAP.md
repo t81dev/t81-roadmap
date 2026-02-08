@@ -52,7 +52,7 @@ Owner cluster: `t81-docs`, `t81-examples`, `ternary-tools`, `ternary-pager`
 - [x] Expand end-to-end samples in `t81-examples` (tracker: `#15`).
 - [x] Build unified docs navigation in `t81-docs` (tracker: `#15`).
 - [x] Add inspection/debug workflows via `ternary-tools` and `ternary-pager` (tracker: `#15`).
-- [ ] Publish migration guides from binary-first systems.
+- [x] Publish migration guides from binary-first systems.
 
 ## Phase 3: Hardware and Systems Prototyping
 
