@@ -9,6 +9,7 @@ from pathlib import Path
 
 
 OWNER_MAP = {
+    "t81-foundation": "@t81dev",
     "t81-vm": "@t81dev",
     "t81-lang": "@t81dev",
     "t81-python": "@t81dev",
@@ -21,6 +22,7 @@ OWNER_MAP = {
 }
 
 BLOCKER_MAP = {
+    "t81-foundation": "none",
     "t81-vm": "none",
     "t81-lang": "none",
     "t81-python": "none",

@@ -22,6 +22,7 @@ Snapshot date: 2026-02-09.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
+| `t81dev/t81-foundation` | `runtime-contract` | [success](https://github.com/t81dev/t81-foundation/actions/runs/21808330179) | 2026-02-09T00:32:45Z |
 | `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21806842118) | 2026-02-08T22:52:35Z |
 | `t81dev/t81-vm` | `ecosystem-compat-matrix` | unknown | n/a |
 | `t81dev/t81-lang` | `ci` | [success](https://github.com/t81dev/t81-lang/actions/runs/21806844336) | 2026-02-08T22:52:18Z |

@@ -11,6 +11,7 @@ from pathlib import Path
 
 
 REPOS = [
+    "t81-foundation",
     "t81-vm",
     "t81-lang",
     "t81-python",
@@ -23,6 +24,7 @@ REPOS = [
 ]
 
 CI_WORKFLOWS = [
+    ("t81dev/t81-foundation", "runtime-contract"),
     ("t81dev/t81-vm", "ecosystem-contract"),
     ("t81dev/t81-vm", "ecosystem-compat-matrix"),
     ("t81dev/t81-lang", "ci"),

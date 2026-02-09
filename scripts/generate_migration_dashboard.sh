@@ -96,6 +96,7 @@ latest_workflow() {
 }
 
 repos=(
+  "${OWNER}/t81-foundation|runtime-contract"
   "${OWNER}/t81-vm|ecosystem-contract"
   "${OWNER}/t81-vm|ecosystem-compat-matrix"
   "${OWNER}/t81-lang|ci"

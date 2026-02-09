@@ -151,6 +151,15 @@ Use this section for recurring updates.
 - Maturity movement: Phase 6 moved from planning-only to active execution with issue-backed workstreams and measurable policy artifacts.
 - Next actions: close `#20` after first scheduled `runtime-v0.5-e2e` run lands and start the 4-week `#21` streak.
 
+### 2026-02-09 (Foundation Contract Governance Integration)
+
+- Scope: brought `t81-foundation` into machine-checked runtime contract governance and roadmap migration reporting.
+- Repos touched: `t81-foundation`, `t81-roadmap`.
+- Risks discovered: low; primary risk is stale marker drift if runtime promotions land without foundation fan-out.
+- Evidence added: `t81-foundation/contracts/runtime-contract.json`, `t81-foundation/.github/workflows/runtime-contract.yml`, and green run `https://github.com/t81dev/t81-foundation/actions/runs/21808330179`.
+- Maturity movement: migration status now tracks foundation as a first-class contract participant (green).
+- Next actions: keep foundation marker updates in every future runtime contract promotion checklist.
+
 ## Pending Coordination Items
 
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
