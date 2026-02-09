@@ -1,7 +1,7 @@
 # Runtime Sync Report
 
 Snapshot date: 2026-02-09.
-Snapshot time (UTC): 2026-02-09T00:02:27Z.
+Snapshot time (UTC): 2026-02-09T00:05:28Z.
 
 ## VM Baseline
 
@@ -14,7 +14,7 @@ Snapshot time (UTC): 2026-02-09T00:02:27Z.
 
 ## Health Summary
 
-- Overall status: `pass`
+- Overall status: `fail`
 
 ## Check Results
 
@@ -22,7 +22,7 @@ Snapshot time (UTC): 2026-02-09T00:02:27Z.
 | --- | --- |
 | t81-vm make check | pass |
 | t81-vm parity evidence artifact | pass |
-| t81-vm ecosystem canary | pass |
+| t81-vm ecosystem canary | fail |
 | t81-lang runtime compatibility | pass |
 | t81-lang compiler/runtime roundtrip | pass |
 | t81-python VM contract gate | pass |
