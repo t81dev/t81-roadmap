@@ -1,12 +1,12 @@
 # Runtime Sync Report
 
 Snapshot date: 2026-02-09.
-Snapshot time (UTC): 2026-02-09T00:05:28Z.
+Snapshot time (UTC): 2026-02-09T00:55:21Z.
 
 ## VM Baseline
 
 - Repository: `t81-vm`
-- Commit pin: `801709e40bef48ad12f7b028aa571665e26dbd02`
+- Commit pin: `e88cefb31ea50254fcb314436acce21dfdfa80c4`
 - Contract version: `2026-02-08-v5`
 - ABI version: `0.1.0`
 - Parity evidence artifact: `build/mode-parity/parity-evidence.json`

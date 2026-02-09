@@ -9,7 +9,7 @@ Source: `https://github.com/t81dev`
 - `duotronic-thesis` (n/a): No description provided. [repo](https://github.com/t81dev/duotronic-thesis) | last push: 2026-01-26.
 - `duotronic-whitepaper` (n/a): A formal proposal and reference semantics for a ternary logic coprocessor that augments binary systems. [repo](https://github.com/t81dev/duotronic-whitepaper) | last push: 2026-02-08.
 - `t81-constraints` (n/a): Epistemic constraints, assumptions, and failure boundaries governing the t81dev research ecosystem. [repo](https://github.com/t81dev/t81-constraints) | last push: 2026-02-08.
-- `t81-foundation` (C++):  T81 Ecosystem: a deterministic, ternary-native computing stack featuring base-81 data types, the TISC instruction set, T81VM, T81Lang, Axion safety/optimization, and the full recursive cognition tiers. [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-02-08.
+- `t81-foundation` (C++):  T81 Ecosystem: a deterministic, ternary-native computing stack featuring base-81 data types, the TISC instruction set, T81VM, T81Lang, Axion safety/optimization, and the full recursive cognition tiers. [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-02-09.
 
 ## Quantization and Model Runtime
 
@@ -34,21 +34,21 @@ Source: `https://github.com/t81dev`
 
 ## Cryptography Experiments
 
-- `trinity` (C): T81 Cipher Suite — REFC • AECS • RTPE • TRTSC Four post-binary encryption algorithms operating directly in balanced ternary. The future is not AES-256. The future is Time-Reversed Ternary. [repo](https://github.com/t81dev/trinity) | last push: 2026-02-08.
-- `trinity-decrypt` (C): No description provided. [repo](https://github.com/t81dev/trinity-decrypt) | last push: 2026-02-08.
-- `trinity-pow` (C): A recursive, entropy-pruned, balanced-ternary mining algorithm that finds sequences whose SHA-256 hash has leading zero bytes and whose trit distribution is maximally random. [repo](https://github.com/t81dev/trinity-pow) | last push: 2026-02-08.
+- `trinity` (C): T81 Cipher Suite — REFC • AECS • RTPE • TRTSC Four post-binary encryption algorithms operating directly in balanced ternary. The future is not AES-256. The future is Time-Reversed Ternary. [repo](https://github.com/t81dev/trinity) | last push: 2026-02-09.
+- `trinity-decrypt` (C): No description provided. [repo](https://github.com/t81dev/trinity-decrypt) | last push: 2026-02-09.
+- `trinity-pow` (C): A recursive, entropy-pruned, balanced-ternary mining algorithm that finds sequences whose SHA-256 hash has leading zero bytes and whose trit distribution is maximally random. [repo](https://github.com/t81dev/trinity-pow) | last push: 2026-02-09.
 
 ## Docs, Narrative, and Program Coordination
 
 - `t81-docs` (Shell): Central hub with architecture overviews, installation guides, API references, visual explainers of balanced ternary, migration paths from binary, and a unified "getting started" for the whole stack. [repo](https://github.com/t81dev/t81-docs) | last push: 2026-02-09.
-- `t81-examples` (Shell): Curated demo [repo](https://github.com/t81dev/t81-examples) | last push: 2026-02-08.
+- `t81-examples` (Shell): Curated demo [repo](https://github.com/t81dev/t81-examples) | last push: 2026-02-09.
 - `t81-roadmap` (Shell): Public vision document, milestone tracking, contribution guidelines, and discussion of bigger picture (e.g., ternary-native ASICs, integration with quantum ideas, AGI implications). [repo](https://github.com/t81dev/t81-roadmap) | last push: 2026-02-09.
 - `ternary-delta` (n/a): What ternary changes, what it doesn’t, and why now. [repo](https://github.com/t81dev/ternary-delta) | last push: 2026-01-23.
 
 ## Uncategorized
 
 - `t81-lang` (C++): T81Lang: the deterministic, balanced-ternary domain-specific language for the T81 ecosystem. Compiles to TISC IR and bytecode for HanoiVM execution with Axion safety guarantees. [repo](https://github.com/t81dev/t81-lang) | last push: 2026-02-08.
-- `t81-vm` (C++): T81VM (HanoiVM): Deterministic, balanced-ternary native virtual machine. Executes TISC bytecode with full reproducibility, Axion safety guarantees, and overflow protection. Core runtime for the T81 ternary computing stack. [repo](https://github.com/t81dev/t81-vm) | last push: 2026-02-08.
+- `t81-vm` (C++): T81VM (HanoiVM): Deterministic, balanced-ternary native virtual machine. Executes TISC bytecode with full reproducibility, Axion safety guarantees, and overflow protection. Core runtime for the T81 ternary computing stack. [repo](https://github.com/t81dev/t81-vm) | last push: 2026-02-09.
 
 ## Suggested Ownership Pattern
 
