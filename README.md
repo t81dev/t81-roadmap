@@ -36,6 +36,7 @@ This repository is the canonical place to:
 - Refresh catalog locally: `scripts/sync_repositories.sh t81dev REPOSITORIES.md`
 - Weekly operational refresh (single command): `make ops-weekly` (or `scripts/ops-weekly.sh t81dev`)
 - Full Phase 5 dry run: `scripts/run_phase5_release_readiness_dry_run.sh`
+- Evaluate phase evidence freshness: `python3 scripts/check_phase_evidence_freshness.py`
 - Seed milestones/issues (after `gh auth login`): `scripts/bootstrap_milestones_and_issues.sh t81dev/t81-roadmap`
 - Regenerate migration dashboard: `scripts/generate_migration_dashboard.sh MIGRATION_DASHBOARD.md`
 - Regenerate runtime sync report: `scripts/generate_runtime_sync_report.sh RUNTIME_SYNC_REPORT.md`
@@ -51,6 +52,7 @@ This repository is the canonical place to:
 - Scheduled migration status workflow: `.github/workflows/migration-status.yml`
 - Scheduled Phase 5 release-readiness workflow: `.github/workflows/phase5-release-readiness.yml`
 - Weekly release cut records: `releases/*.md`
+- Phase evidence freshness report: `PHASE_EVIDENCE_STATUS.md` / `PHASE_EVIDENCE_STATUS.json`
 
 ## Ecosystem Structure
 

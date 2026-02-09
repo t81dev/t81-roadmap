@@ -1,11 +1,11 @@
 # Repository Catalog
 
-Snapshot date: February 08, 2026.
+Snapshot date: February 09, 2026.
 Source: `https://github.com/t81dev`
 
 ## Foundation and Specs
 
-- `duotronic-computing` (C++): Interpretive and contextual material exploring duotronic computing and the Ternary Logic Unit (TLU). This repository is non-normative and depends on the formal specification at t81dev/duotroic-whitepaper. [repo](https://github.com/t81dev/duotronic-computing) | last push: 2026-01-25.
+- `duotronic-computing` (C++): Interpretive and contextual material exploring duotronic computing and the Ternary Logic Unit (TLU). This repository is non-normative and depends on the formal specification at t81dev/duotronic-whitepaper. [repo](https://github.com/t81dev/duotronic-computing) | last push: 2026-01-25.
 - `duotronic-thesis` (n/a): No description provided. [repo](https://github.com/t81dev/duotronic-thesis) | last push: 2026-01-26.
 - `duotronic-whitepaper` (n/a): A formal proposal and reference semantics for a ternary logic coprocessor that augments binary systems. [repo](https://github.com/t81dev/duotronic-whitepaper) | last push: 2026-02-08.
 - `t81-constraints` (n/a): Epistemic constraints, assumptions, and failure boundaries governing the t81dev research ecosystem. [repo](https://github.com/t81dev/t81-constraints) | last push: 2026-02-08.

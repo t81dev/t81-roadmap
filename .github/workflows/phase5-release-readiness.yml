@@ -80,6 +80,9 @@ jobs:
       - name: Run phase5 release-readiness dry run
         id: dry_run
         working-directory: t81-roadmap
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PHASE_EVIDENCE_MANAGE_ISSUES: "1"
         run: scripts/run_phase5_release_readiness_dry_run.sh
 
       - name: Commit and push dry-run updates
@@ -93,6 +96,8 @@ jobs:
             ECOSYSTEM_RELEASE_MANIFEST.json \
             MIGRATION_STATUS.md \
             MIGRATION_BLOCKERS.json \
+            PHASE_EVIDENCE_STATUS.md \
+            PHASE_EVIDENCE_STATUS.json \
             releases/ \
             ; then
             echo "No dry-run artifact changes detected."
@@ -107,6 +112,8 @@ jobs:
             ECOSYSTEM_RELEASE_MANIFEST.json \
             MIGRATION_STATUS.md \
             MIGRATION_BLOCKERS.json \
+            PHASE_EVIDENCE_STATUS.md \
+            PHASE_EVIDENCE_STATUS.json \
             releases/
           git commit -m "chore: automated phase5 release-readiness dry run"
           git push origin HEAD:main

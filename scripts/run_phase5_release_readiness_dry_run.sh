@@ -34,6 +34,9 @@ print("onboarding_ref_check: ok")
 PY
 )
 
+echo "[phase5-dry-run] evaluating phase evidence freshness"
+(cd "${ROOT_DIR}" && python3 scripts/check_phase_evidence_freshness.py)
+
 manifest_tag="$(jq -r '.runtime_contract.tag' "${ROOT_DIR}/ECOSYSTEM_RELEASE_MANIFEST.json")"
 manifest_version="$(jq -r '.runtime_contract.contract_version' "${ROOT_DIR}/ECOSYSTEM_RELEASE_MANIFEST.json")"
 manifest_pin="$(jq -r '.runtime_contract.vm_main_pin' "${ROOT_DIR}/ECOSYSTEM_RELEASE_MANIFEST.json")"
@@ -69,6 +72,7 @@ Validate weekly release-readiness mechanics end-to-end:
 3. \`t81-python/scripts/check-vm-contract.py\`
 4. \`t81-docs/scripts/check-runtime-contract-sync.py\`
 5. onboarding reference existence check (Stage 0/3/4 assets)
+6. phase evidence freshness check (\`PHASE_EVIDENCE_STATUS.md\`)
 
 ## Status Snapshot
 

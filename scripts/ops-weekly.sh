@@ -22,4 +22,7 @@ python3 "${ROOT_DIR}/scripts/generate_migration_status.py"
 echo "[ops-weekly] syncing migration blockers"
 python3 "${ROOT_DIR}/scripts/sync_migration_blockers.py"
 
+echo "[ops-weekly] evaluating phase evidence freshness"
+python3 "${ROOT_DIR}/scripts/check_phase_evidence_freshness.py"
+
 echo "[ops-weekly] complete"

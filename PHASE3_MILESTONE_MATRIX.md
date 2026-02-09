@@ -21,6 +21,14 @@ Snapshot date: 2026-02-08.
 3. Promotion checkpoint:
    Phase 3 issues above linked from roadmap status update before any phase promotion proposal.
 
+## Evidence Freshness Policy
+
+- Freshness threshold: `30` days since last linked issue evidence update.
+- Freshness report artifact: `PHASE_EVIDENCE_STATUS.md`.
+- Weekly enforcement path:
+  - `scripts/check_phase_evidence_freshness.py`
+  - stale alerts managed in `t81-roadmap` with label `phase-evidence-stale`.
+
 ## Execution Order
 
 1. `t81-hardware` defines and validates simulation ladder baseline.

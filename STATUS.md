@@ -40,11 +40,11 @@ Snapshot date: February 8, 2026.
 
 | Cluster | Primary Repos | Steward | Backup |
 | --- | --- | --- | --- |
-| Specs and Constraints | `t81-foundation`, `duotronic-whitepaper`, `t81-constraints` | `@t81dev` | `@t81dev (interim)` |
-| Runtime and Quantization | `t81-vm`, `t81lib`, `ternary`, `t81-python`, `ternary_gcc_plugin` | `@t81dev` | `@t81dev (interim)` |
-| Tooling and Docs | `t81-docs`, `t81-examples`, `ternary-tools`, `t81-roadmap` | `@t81dev` | `@t81dev (interim)` |
-| Hardware and Systems | `t81-hardware`, `ternary-fabric`, `ternary-memory-research` | `@t81dev` | `@t81dev (interim)` |
-| Crypto Experiments | `trinity`, `trinity-decrypt`, `trinity-pow` | `@t81dev` | `@t81dev (interim)` |
+| Specs and Constraints | `t81-foundation`, `duotronic-whitepaper`, `t81-constraints` | `@t81dev` | `@t81dev` |
+| Runtime and Quantization | `t81-vm`, `t81lib`, `ternary`, `t81-python`, `ternary_gcc_plugin` | `@t81dev` | `@t81dev` |
+| Tooling and Docs | `t81-docs`, `t81-examples`, `ternary-tools`, `t81-roadmap` | `@t81dev` | `@t81dev` |
+| Hardware and Systems | `t81-hardware`, `ternary-fabric`, `ternary-memory-research` | `@t81dev` | `@t81dev` |
+| Crypto Experiments | `trinity`, `trinity-decrypt`, `trinity-pow` | `@t81dev` | `@t81dev` |
 
 ## Current Focus Areas
 
@@ -114,6 +114,24 @@ Use this section for recurring updates.
 - Evidence added: `releases/2026-02-08-phase5-release-readiness-dry-run.md`, refreshed manifest/status/dashboard/runtime-sync artifacts, and successful compatibility checks in lang/python/docs repos.
 - Maturity movement: Phase 5 operationalization moved from static checklist to validated, repeatable weekly runbook execution.
 - Next actions: repeat weekly dry-run cadence and treat non-green migration status entries as release blockers.
+
+### 2026-02-08 (Owner and Freshness Hardening)
+
+- Scope: replaced interim backup-owner placeholders and added explicit Phase 3/4 evidence freshness governance.
+- Repos touched: `t81-roadmap`.
+- Risks discovered: with freshness checks automated, primary remaining risk is delayed human response to stale-evidence alerts.
+- Evidence added: `scripts/check_phase_evidence_freshness.py`, `PHASE_EVIDENCE_STATUS.md`, `PHASE_EVIDENCE_STATUS.json`, and freshness policy sections in Phase 3/4 matrices.
+- Maturity movement: migration operations gained proactive stale-evidence detection and concrete backup owner assignments.
+- Next actions: monitor first automated stale-evidence cycle and triage generated `phase-evidence-stale` issues.
+
+### 2026-02-09 (Consistency and Hygiene Pass)
+
+- Scope: standardized runtime tag interpretation in docs checks, corrected catalog naming hygiene, and integrated phase freshness checks into weekly/dry-run automation.
+- Repos touched: `t81-roadmap`, `t81-docs`.
+- Risks discovered: operationally low; primary risk now is external API/transient workflow instability rather than governance drift.
+- Evidence added: `PHASE_EVIDENCE_STATUS.md`, `PHASE_EVIDENCE_STATUS.json`, and automated stale-alert workflow wiring in `.github/workflows/phase5-release-readiness.yml`.
+- Maturity movement: release-readiness automation now includes proactive stale-evidence governance and normalized runtime-tag semantics.
+- Next actions: confirm first scheduled workflow run and verify stale-alert issue lifecycle behavior end-to-end.
 
 ## Pending Coordination Items
 

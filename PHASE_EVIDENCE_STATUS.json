@@ -1,0 +1,95 @@
+{
+  "generated_at_utc": "2026-02-09T00:02:44Z",
+  "max_age_days": 30,
+  "stale_count": 0,
+  "issues": [
+    {
+      "phase": "phase-3",
+      "repo": "t81dev/t81-hardware",
+      "number": 2,
+      "url": "https://github.com/t81dev/t81-hardware/issues/2",
+      "title": "Phase 3 milestone ladder: simulation and verification matrix",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:51:12Z",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "phase": "phase-3",
+      "repo": "t81dev/t81-roadmap",
+      "number": 16,
+      "url": "https://github.com/t81dev/t81-roadmap/issues/16",
+      "title": "Phase 3 kickoff execution: hardware simulation milestone plan",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:51:37Z",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "phase": "phase-3",
+      "repo": "t81dev/ternary-fabric",
+      "number": 42,
+      "url": "https://github.com/t81dev/ternary-fabric/issues/42",
+      "title": "Phase 3 integration: memory/interconnect experiment handoff map",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:51:12Z",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "phase": "phase-3",
+      "repo": "t81dev/ternary-memory-research",
+      "number": 2,
+      "url": "https://github.com/t81dev/ternary-memory-research/issues/2",
+      "title": "Phase 3 validation hypotheses: memory kill criteria evidence plan",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:51:12Z",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "phase": "phase-4",
+      "repo": "t81dev/t81-roadmap",
+      "number": 5,
+      "url": "https://github.com/t81dev/t81-roadmap/issues/5",
+      "title": "P4 kickoff: security and applied domains checklist",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:02:33Z",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "phase": "phase-4",
+      "repo": "t81dev/trinity",
+      "number": 1,
+      "url": "https://github.com/t81dev/trinity/issues/1",
+      "title": "Phase 4: security evaluation baseline plan",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:07:33Z",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "phase": "phase-4",
+      "repo": "t81dev/trinity-decrypt",
+      "number": 1,
+      "url": "https://github.com/t81dev/trinity-decrypt/issues/1",
+      "title": "Phase 4: decrypt-path evaluation and benchmark alignment",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:07:35Z",
+      "age_days": 0,
+      "stale": false
+    },
+    {
+      "phase": "phase-4",
+      "repo": "t81dev/trinity-pow",
+      "number": 1,
+      "url": "https://github.com/t81dev/trinity-pow/issues/1",
+      "title": "Phase 4: pow workload threat-model and evaluation notes",
+      "state": "closed",
+      "updated_at": "2026-02-08T23:07:38Z",
+      "age_days": 0,
+      "stale": false
+    }
+  ]
+}

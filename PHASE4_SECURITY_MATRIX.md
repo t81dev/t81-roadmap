@@ -42,3 +42,11 @@ Threat-model notes for Phase 4 contributions must include:
 
 Phase 4 can be considered complete only when all three implementation issues are closed
 with linked benchmark/evaluation artifacts and threat-model notes.
+
+## Evidence Freshness Policy
+
+- Freshness threshold: `30` days since last linked issue evidence update.
+- Freshness report artifact: `PHASE_EVIDENCE_STATUS.md`.
+- Weekly enforcement path:
+  - `scripts/check_phase_evidence_freshness.py`
+  - stale alerts managed in `t81-roadmap` with label `phase-evidence-stale`.

@@ -80,6 +80,7 @@ categories=(
       if [[ -z "$clean_desc" ]]; then
         clean_desc="No description provided."
       fi
+      clean_desc="${clean_desc//t81dev\/duotroic-whitepaper/t81dev\/duotronic-whitepaper}"
 
       echo "- \`${name}\` (${language}): ${clean_desc} [repo](${url}) | last push: ${short_date}."
     done < "$tmp_file"
