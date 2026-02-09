@@ -190,9 +190,9 @@ Use this section for recurring updates.
 - Repos touched: `t81-examples`, `t81-roadmap`, `t81-vm`.
 - Risks discovered: low technical risk; primary risk is stale release metadata if cadence automation is disabled.
 - Evidence added:
-  - `t81-examples` canonical suite CI green: `https://github.com/t81dev/t81-examples/actions/runs/21809610214`
+  - `t81-examples` canonical suite CI green: `https://github.com/t81dev/t81-examples/actions/runs/21809629669`
   - golden-demo generator: `scripts/generate_runtime_golden_demo_release.py`
-  - golden-demo monthly workflow: `.github/workflows/golden-demo-release.yml`
+  - golden-demo monthly workflow: `.github/workflows/golden-demo-release.yml` (validated run `https://github.com/t81dev/t81-roadmap/actions/runs/21809662071`)
   - v0.6 RFC draft: `t81-vm/docs/rfcs/RFC-0003-runtime-contract-v0.6-planning.md`
 - Maturity movement: ecosystem progressed from single-demo validation to suite-level canonical validation with recurring release artifact automation.
 - Next actions: keep `#24` checklist current and continue `#21` streak toward `4/4`.
