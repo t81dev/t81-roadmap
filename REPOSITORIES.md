@@ -14,7 +14,7 @@ Source: `https://github.com/t81dev`
 ## Quantization and Model Runtime
 
 - `ANGELA` (Python): No description provided. [repo](https://github.com/t81dev/ANGELA) | last push: 2026-01-25.
-- `llama.cpp` (C++): LLM inference in C/C++ [repo](https://github.com/t81dev/llama.cpp) | last push: 2026-02-08.
+- `llama.cpp` (C++): LLM inference in C/C++ [repo](https://github.com/t81dev/llama.cpp) | last push: 2026-02-09.
 - `t81-python` (Python): High-level Python package on PyPI with clean APIs, type hints, and integration examples (e.g., with Hugging Face or llama.cpp Python bindings). [repo](https://github.com/t81dev/t81-python) | last push: 2026-02-08.
 - `t81lib` (C++): t81lib – Balanced-ternary quantization and arithmetic core for AI and quant workloads in modern C++ and Python. [repo](https://github.com/t81dev/t81lib) | last push: 2026-02-08.
 - `ternary` (C++): Ternary Quantization for LLMs: Implement balanced ternary (T3_K) weights for 2.63-bit quantization—the first working solution for modern large language models. [repo](https://github.com/t81dev/ternary) | last push: 2025-11-29.
@@ -27,7 +27,7 @@ Source: `https://github.com/t81dev`
 
 ## Hardware and Systems
 
-- `t81-hardware` (SystemVerilog): Verilog/VHDL simulations, testbenches, FPGA targeting scripts, or even a software emulator of the ternary co-processor. [repo](https://github.com/t81dev/t81-hardware) | last push: 2026-02-08.
+- `t81-hardware` (SystemVerilog): Verilog/VHDL simulations, testbenches, FPGA targeting scripts, or even a software emulator of the ternary co-processor. [repo](https://github.com/t81dev/t81-hardware) | last push: 2026-02-09.
 - `ternary-fabric` (C): Ternary Fabric is a ternary-native memory and interconnect co-processor designed to accelerate AI and signal processing workloads.  [repo](https://github.com/t81dev/ternary-fabric) | last push: 2026-02-08.
 - `ternary-memory-research` (Python): No description provided. [repo](https://github.com/t81dev/ternary-memory-research) | last push: 2026-02-08.
 - `ternary_gcc_plugin` (C): Enable C/C++ to express balanced-ternary operations, lower them deterministically through GCC into a normative helper ABI, and use that ABI as a stable interface for experimental ternary ISA and SIMD prototyping. [repo](https://github.com/t81dev/ternary_gcc_plugin) | last push: 2026-02-08.
@@ -47,7 +47,7 @@ Source: `https://github.com/t81dev`
 
 ## Uncategorized
 
-- `t81-lang` (C++): T81Lang: the deterministic, balanced-ternary domain-specific language for the T81 ecosystem. Compiles to TISC IR and bytecode for HanoiVM execution with Axion safety guarantees. [repo](https://github.com/t81dev/t81-lang) | last push: 2026-02-08.
+- `t81-lang` (C++): T81Lang: the deterministic, balanced-ternary domain-specific language for the T81 ecosystem. Compiles to TISC IR and bytecode for HanoiVM execution with Axion safety guarantees. [repo](https://github.com/t81dev/t81-lang) | last push: 2026-02-09.
 - `t81-vm` (C++): T81VM (HanoiVM): Deterministic, balanced-ternary native virtual machine. Executes TISC bytecode with full reproducibility, Axion safety guarantees, and overflow protection. Core runtime for the T81 ternary computing stack. [repo](https://github.com/t81dev/t81-vm) | last push: 2026-02-09.
 
 ## Suggested Ownership Pattern

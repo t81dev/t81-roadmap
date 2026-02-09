@@ -17,7 +17,7 @@ Validate weekly release-readiness mechanics end-to-end:
 - Runtime tag: `runtime-contract-v0.5`
 - Contract version: `2026-02-08-v5`
 - VM pin: `4158a42156a085a2b722205be951576fc01969b9`
-- Manifest generated at: `2026-02-09T00:58:36Z`
+- Manifest generated at: `2026-02-09T08:37:38Z`
 
 ## Executed Checks
 
@@ -30,7 +30,7 @@ Validate weekly release-readiness mechanics end-to-end:
 
 ## Status Snapshot
 
-- Dry-run completed at: `2026-02-09T00:55:21Z`
+- Dry-run completed at: `2026-02-09T08:34:11Z`
 - Migration status board: `MIGRATION_STATUS.md`
 - Blocker map: `MIGRATION_BLOCKERS.json`
 
