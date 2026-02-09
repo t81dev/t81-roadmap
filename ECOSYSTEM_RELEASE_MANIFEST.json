@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-02-09T00:33:10Z",
+  "generated_at_utc": "2026-02-09T00:36:38Z",
   "runtime_contract": {
     "tag": "runtime-contract-v0.5",
     "contract_version": "2026-02-08-v5",
@@ -12,7 +12,7 @@
   },
   "repo_pins": {
     "t81-foundation": "81abbe60f5962a5c57ad98bea3cc3c94c7a72093",
-    "t81-vm": "801709e40bef48ad12f7b028aa571665e26dbd02",
+    "t81-vm": "353d1a41aa8711811d293fb50635331de76cc467",
     "t81-lang": "0051f0cf295a3d4b3cd611f176b86701fb0aca7d",
     "t81-python": "3f576442ed6776a560c4a2daf3f505a31ff97ddf",
     "t81-docs": "e467ea99f0c58b87c636e1fc2df589344449e06a",
@@ -20,7 +20,7 @@
     "ternary-tools": "a7359f98a0218466a37755851f0610f2c2e3830b",
     "ternary-pager": "8d8ec206cac812bd52798a9fbddf40466ccc71e8",
     "t81-benchmarks": "880d8acefc718a318a25760aa9e499adb3622727",
-    "t81-roadmap": "10e4e24937d6d6612b8f6b898ec0cd99d48f1b18"
+    "t81-roadmap": "581abf9757694382f77105edc18f9fd8f4fdb514"
   },
   "ci_evidence": [
     {
