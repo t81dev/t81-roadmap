@@ -12,11 +12,13 @@ P6-D3 (`t81-roadmap#21`).
 
 ## Streak Log
 
-| Week | Date (UTC) | Workflow Run | Result | Notes |
-| --- | --- | --- | --- | --- |
-| 0 (pre-streak) | 2026-02-09 | https://github.com/t81dev/t81-roadmap/actions/runs/21808609666 | failure | Missing `t81-foundation` checkout in roadmap automation workflows; fixed by commit `52b3f5e`. |
-| 1 | 2026-02-09 | https://github.com/t81dev/t81-roadmap/actions/runs/21808698958 | success | First green run after workflow fix; streak initialized. |
+| Index | Date (UTC) | Workflow Run | Result |
+| --- | --- | --- | --- |
+| 1 | 2026-02-09 | [#21808698958](https://github.com/t81dev/t81-roadmap/actions/runs/21808698958) | `success` |
+| 2 | 2026-02-09 | [#21808609666](https://github.com/t81dev/t81-roadmap/actions/runs/21808609666) | `failure` |
+| 3 | 2026-02-09 | [#21807870310](https://github.com/t81dev/t81-roadmap/actions/runs/21807870310) | `success` |
 
 ## Rule
 
-- If any weekly run is non-green, reset streak count to `0` and log the root cause + fix commit.
+- If any weekly run is non-green, streak resets to `0` from that run forward.
+- Use this tracker plus `releases/*.md` records as the evidence source for `#21`.

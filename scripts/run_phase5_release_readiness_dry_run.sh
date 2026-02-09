@@ -37,6 +37,14 @@ PY
 echo "[phase5-dry-run] evaluating phase evidence freshness"
 (cd "${ROOT_DIR}" && python3 scripts/check_phase_evidence_freshness.py)
 
+echo "[phase5-dry-run] updating quality-gate streak tracker"
+if [[ -n "${GH_TOKEN:-${GITHUB_TOKEN:-}}" ]]; then
+  (cd "${ROOT_DIR}" && python3 scripts/update_phase5_quality_gate_streak.py) || \
+    echo "[phase5-dry-run] warning: unable to refresh streak tracker"
+else
+  echo "[phase5-dry-run] skipping streak tracker update (missing GH token)"
+fi
+
 manifest_tag="$(jq -r '.runtime_contract.tag' "${ROOT_DIR}/ECOSYSTEM_RELEASE_MANIFEST.json")"
 manifest_version="$(jq -r '.runtime_contract.contract_version' "${ROOT_DIR}/ECOSYSTEM_RELEASE_MANIFEST.json")"
 manifest_pin="$(jq -r '.runtime_contract.vm_main_pin' "${ROOT_DIR}/ECOSYSTEM_RELEASE_MANIFEST.json")"

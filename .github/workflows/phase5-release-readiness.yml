@@ -105,6 +105,7 @@ jobs:
             MIGRATION_BLOCKERS.json \
             PHASE_EVIDENCE_STATUS.md \
             PHASE_EVIDENCE_STATUS.json \
+            docs/phase5-quality-gate-streak.md \
             releases/ \
             ; then
             echo "No dry-run artifact changes detected."
@@ -121,6 +122,7 @@ jobs:
             MIGRATION_BLOCKERS.json \
             PHASE_EVIDENCE_STATUS.md \
             PHASE_EVIDENCE_STATUS.json \
+            docs/phase5-quality-gate-streak.md \
             releases/
           git commit -m "chore: automated phase5 release-readiness dry run"
           git push origin HEAD:main
