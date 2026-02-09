@@ -29,6 +29,7 @@ This repository is the canonical place to:
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
 - Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
 - Runtime Promotion Policy: `docs/runtime-promotion-policy.md`
+- Phase 5 Quality-Gate Streak: `docs/phase5-quality-gate-streak.md`
 - Ecosystem Release Manifest: `ECOSYSTEM_RELEASE_MANIFEST.json`
 - Contributor Onboarding Path: `CONTRIBUTOR_ONBOARDING_PATH.md`
 - Contribution Process: `CONTRIBUTING.md`
@@ -54,6 +55,7 @@ This repository is the canonical place to:
 - Scheduled migration status workflow: `.github/workflows/migration-status.yml`
 - Scheduled Phase 5 release-readiness workflow: `.github/workflows/phase5-release-readiness.yml`
 - Weekly release cut records: `releases/*.md`
+- Golden demo release artifact: `releases/2026-02-09-runtime-v0.5-golden-demo.md`
 - Phase evidence freshness report: `PHASE_EVIDENCE_STATUS.md` / `PHASE_EVIDENCE_STATUS.json`
 
 ## Ecosystem Structure

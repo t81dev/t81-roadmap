@@ -160,6 +160,18 @@ Use this section for recurring updates.
 - Maturity movement: migration status now tracks foundation as a first-class contract participant (green).
 - Next actions: keep foundation marker updates in every future runtime contract promotion checklist.
 
+### 2026-02-09 (Phase 6 Rehearsal and Golden Demo)
+
+- Scope: completed a successful post-fix Phase 5 rehearsal run, initialized the quality-gate streak tracker, and published a pinned golden-demo artifact.
+- Repos touched: `t81-roadmap`, `t81-vm`, `t81-foundation`, `t81-examples`.
+- Risks discovered: the first rehearsal attempt failed due missing `t81-foundation` checkout in roadmap workflows; fixed via `t81-roadmap` commit `52b3f5e`.
+- Evidence added:
+  - success run: `https://github.com/t81dev/t81-roadmap/actions/runs/21808698958`
+  - streak tracker: `docs/phase5-quality-gate-streak.md` (`1/4` initialized)
+  - golden artifact: `releases/2026-02-09-runtime-v0.5-golden-demo.md`
+- Maturity movement: P6-D1 now has rehearsal evidence and P6-D3 moved from not-started to active weekly streak execution.
+- Next actions: close `#19` and continue weekly quality-gate streak toward `4/4` in `#21`.
+
 ## Pending Coordination Items
 
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
@@ -169,5 +181,6 @@ Use this section for recurring updates.
 - Maintain Phase 6 execution tracker issue `#18` and keep owner/evidence fields current.
 - Drive P6-D2 consumer-path upkeep in `t81-examples` and `t81-docs` on each runtime contract promotion.
 - Keep Phase 6 child issue checklist (`#19`-`#22`) updated with weekly evidence links.
+- Keep `docs/phase5-quality-gate-streak.md` synchronized with every weekly run result.
 - Keep monthly publication bundles current in `t81-benchmarks/publications/`.
 - Keep weekly ecosystem release-cut records current under `releases/`.
