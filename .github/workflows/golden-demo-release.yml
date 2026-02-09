@@ -1,0 +1,40 @@
+name: Golden Demo Release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 8 1 * *"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout t81-roadmap
+        uses: actions/checkout@v4
+        with:
+          path: t81-roadmap
+
+      - name: Generate release manifest
+        working-directory: t81-roadmap
+        run: python3 scripts/generate_ecosystem_release_manifest.py
+
+      - name: Generate runtime golden-demo release
+        working-directory: t81-roadmap
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate_runtime_golden_demo_release.py
+
+      - name: Commit and push golden-demo release artifacts
+        working-directory: t81-roadmap
+        run: |
+          if git diff --quiet -- ECOSYSTEM_RELEASE_MANIFEST.json releases/; then
+            echo "No golden-demo artifact changes detected."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ECOSYSTEM_RELEASE_MANIFEST.json releases/
+          git commit -m "chore: publish monthly runtime golden-demo artifact"
+          git push origin HEAD:main

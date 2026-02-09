@@ -29,6 +29,8 @@ Exit criteria:
 ## Stage 1: First Issue (Single Repo)
 
 Pick a `good-first-issue` in one repo from `REPOSITORIES.md`.
+You can use `docs/contributor-intake-board.md` for current cross-repo
+good-first options.
 
 Required workflow:
 1. Link the issue in your PR.

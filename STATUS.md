@@ -172,6 +172,31 @@ Use this section for recurring updates.
 - Maturity movement: P6-D1 now has rehearsal evidence and P6-D3 moved from not-started to active weekly streak execution.
 - Next actions: close `#19` and continue weekly quality-gate streak toward `4/4` in `#21`.
 
+### 2026-02-09 (v0.6 Planning and Contributor Intake Activation)
+
+- Scope: initiated runtime-contract-v0.6 planning lane and stood up explicit external contributor intake tasks.
+- Repos touched: `t81-vm`, `t81-roadmap`, `t81-examples`, `t81-docs`, `t81-foundation`.
+- Risks discovered: low implementation risk; primary risk is drift between v0.6 planning checklist and downstream repo execution if issue links are not maintained.
+- Evidence added:
+  - v0.6 tracker: `https://github.com/t81dev/t81-roadmap/issues/24`
+  - good-first cross-repo tasks: `t81-docs#5`, `t81-examples#2`, `t81-foundation#113`
+  - intake board: `docs/contributor-intake-board.md`
+- Maturity movement: ecosystem development moved from migration-only execution to an active next-contract planning + contributor intake cycle.
+- Next actions: maintain issue-state sync between intake board and target repos; prepare first v0.6 checklist status update.
+
+### 2026-02-09 (Canonical Suite Expansion and Cadence Automation)
+
+- Scope: expanded canonical consumer suite from one path to three, added monthly golden-demo generation cadence, and automated streak-tracker refresh in Phase 5 workflows.
+- Repos touched: `t81-examples`, `t81-roadmap`, `t81-vm`.
+- Risks discovered: low technical risk; primary risk is stale release metadata if cadence automation is disabled.
+- Evidence added:
+  - `t81-examples` canonical suite CI green: `https://github.com/t81dev/t81-examples/actions/runs/21809610214`
+  - golden-demo generator: `scripts/generate_runtime_golden_demo_release.py`
+  - golden-demo monthly workflow: `.github/workflows/golden-demo-release.yml`
+  - v0.6 RFC draft: `t81-vm/docs/rfcs/RFC-0003-runtime-contract-v0.6-planning.md`
+- Maturity movement: ecosystem progressed from single-demo validation to suite-level canonical validation with recurring release artifact automation.
+- Next actions: keep `#24` checklist current and continue `#21` streak toward `4/4`.
+
 ## Pending Coordination Items
 
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
@@ -182,5 +207,7 @@ Use this section for recurring updates.
 - Drive P6-D2 consumer-path upkeep in `t81-examples` and `t81-docs` on each runtime contract promotion.
 - Keep Phase 6 child issue checklist (`#19`-`#22`) updated with weekly evidence links.
 - Keep `docs/phase5-quality-gate-streak.md` synchronized with every weekly run result.
+- Keep `docs/runtime-v0.6-downstream-impact-checklist.md` and `docs/contributor-intake-board.md` synced with issue state.
+- Keep monthly golden-demo artifacts publishing under `releases/` via `golden-demo-release.yml`.
 - Keep monthly publication bundles current in `t81-benchmarks/publications/`.
 - Keep weekly ecosystem release-cut records current under `releases/`.

@@ -29,6 +29,8 @@ This repository is the canonical place to:
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
 - Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
 - Runtime Promotion Policy: `docs/runtime-promotion-policy.md`
+- Runtime v0.6 Impact Checklist: `docs/runtime-v0.6-downstream-impact-checklist.md`
+- Contributor Intake Board: `docs/contributor-intake-board.md`
 - Phase 5 Quality-Gate Streak: `docs/phase5-quality-gate-streak.md`
 - Ecosystem Release Manifest: `ECOSYSTEM_RELEASE_MANIFEST.json`
 - Contributor Onboarding Path: `CONTRIBUTOR_ONBOARDING_PATH.md`
@@ -45,6 +47,7 @@ This repository is the canonical place to:
 - Regenerate migration dashboard: `scripts/generate_migration_dashboard.sh MIGRATION_DASHBOARD.md`
 - Regenerate runtime sync report: `scripts/generate_runtime_sync_report.sh RUNTIME_SYNC_REPORT.md`
 - Regenerate release manifest: `python3 scripts/generate_ecosystem_release_manifest.py`
+- Generate runtime golden-demo release: `python3 scripts/generate_runtime_golden_demo_release.py`
 - Regenerate migration status board: `python3 scripts/generate_migration_status.py`
 - Sync migration blockers: `python3 scripts/sync_migration_blockers.py`
 - Run foundation spec/RFC intake: `scripts/intake_foundation_spec_changes.sh`
@@ -55,8 +58,10 @@ This repository is the canonical place to:
 - Scheduled release manifest workflow: `.github/workflows/release-manifest.yml`
 - Scheduled migration status workflow: `.github/workflows/migration-status.yml`
 - Scheduled Phase 5 release-readiness workflow: `.github/workflows/phase5-release-readiness.yml`
+- Scheduled golden-demo workflow: `.github/workflows/golden-demo-release.yml`
 - Weekly release cut records: `releases/*.md`
 - Golden demo release artifact: `releases/2026-02-09-runtime-v0.5-golden-demo.md`
+- Golden demo template: `releases/templates/runtime-golden-demo-template.md`
 - Phase evidence freshness report: `PHASE_EVIDENCE_STATUS.md` / `PHASE_EVIDENCE_STATUS.json`
 
 ## Ecosystem Structure

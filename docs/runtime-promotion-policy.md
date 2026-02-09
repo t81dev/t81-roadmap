@@ -22,9 +22,10 @@ downstream drift.
 ## Required Evidence Before Promotion
 
 1. `t81-vm` contract and parity checks green.
-2. `t81-lang`, `t81-python`, `t81-docs`, `t81-examples` compatibility workflows green.
+2. `t81-lang`, `t81-python`, `t81-docs`, `t81-examples`, `t81-foundation` compatibility workflows green.
 3. `ECOSYSTEM_RELEASE_MANIFEST.json`, `MIGRATION_DASHBOARD.md`, and `MIGRATION_STATUS.md` regenerated.
 4. Promotion note committed under `releases/YYYY-MM-DD-runtime-contract-vX.Y-promotion.md`.
+5. Downstream impact checklist updated for the target cycle (for example `docs/runtime-v0.6-downstream-impact-checklist.md`).
 
 ## Rollback Rule
 
@@ -36,4 +37,4 @@ downstream drift.
 
 - Promotion coordinator: `t81-roadmap` steward.
 - Canonical contract owner: `t81-vm`.
-- Downstream marker owners: `t81-lang`, `t81-python`, `t81-docs`, `t81-examples`.
+- Downstream marker owners: `t81-lang`, `t81-python`, `t81-docs`, `t81-examples`, `t81-foundation`.
