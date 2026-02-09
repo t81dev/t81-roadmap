@@ -147,7 +147,7 @@ Use this section for recurring updates.
 - Scope: activated all Phase 6 child workstreams and wired consumer-path CI into migration reporting.
 - Repos touched: `t81-roadmap`, `t81-examples`, `trinity`, `trinity-decrypt`, `trinity-pow`.
 - Risks discovered: low implementation risk; primary risk is cadence drift if weekly evidence updates are skipped.
-- Evidence added: child trackers `#19`, `#20`, `#21`, `#22`; `docs/runtime-promotion-policy.md`; refreshed dashboard/manifest/status artifacts with `t81-examples` `runtime-v0.5-e2e` CI evidence lane.
+- Evidence added: child trackers `#19`, `#20`, `#21`, `#22`; `docs/runtime-promotion-policy.md`; refreshed dashboard/manifest/status artifacts with `t81-examples` `runtime-v0.5-e2e` CI evidence lane (`https://github.com/t81dev/t81-examples/actions/runs/21808211940`).
 - Maturity movement: Phase 6 moved from planning-only to active execution with issue-backed workstreams and measurable policy artifacts.
 - Next actions: close `#20` after first scheduled `runtime-v0.5-e2e` run lands and start the 4-week `#21` streak.
 
