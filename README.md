@@ -2,7 +2,7 @@
 
 Public roadmap and coordination hub for the `t81dev` ecosystem.
 
-Snapshot date: February 8, 2026.
+Snapshot date: February 9, 2026.
 
 ## Purpose
 
@@ -20,6 +20,7 @@ This repository is the canonical place to:
 - Phase 1 Stabilization Matrix: `PHASE1_STABILIZATION_MATRIX.md`
 - Phase 3 Milestone Matrix: `PHASE3_MILESTONE_MATRIX.md`
 - Phase 4 Security Matrix: `PHASE4_SECURITY_MATRIX.md`
+- Phase 6 Development Matrix: `PHASE6_DEVELOPMENT_MATRIX.md`
 - Repository Catalog: `REPOSITORIES.md`
 - Current Status Board: `STATUS.md`
 - Migration Dashboard: `MIGRATION_DASHBOARD.md`
@@ -78,6 +79,7 @@ See `REPOSITORIES.md` for full per-repo mapping.
 - Unify docs and onboarding flow (`t81-docs`, `t81-examples`, `t81-roadmap`).
 - Stabilize core specs and constraints (`t81-foundation`, `t81-constraints`, `duotronic-whitepaper`).
 - Publish repeatable benchmark baselines (`t81-benchmarks`, `t81lib`, `ternary`).
+- Operationalize post-migration execution cadence (`PHASE6_DEVELOPMENT_MATRIX.md`).
 
 ## Scope Note
 

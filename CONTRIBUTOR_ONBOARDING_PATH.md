@@ -18,10 +18,13 @@ cross-repo migration work.
    - `ROADMAP.md`
    - `STATUS.md`
    - `MIGRATION_STATUS.md`
+4. Run consumer smoke path:
+   - `t81-examples/scripts/run-runtime-v0.5-e2e.sh`
 
 Exit criteria:
 - local environment can run repo checks
 - contributor understands current migration baseline (`runtime-contract` tag/version)
+- contributor can execute the canonical consumer runtime path
 
 ## Stage 1: First Issue (Single Repo)
 

@@ -1,6 +1,6 @@
 # Status Board
 
-Snapshot date: February 8, 2026.
+Snapshot date: February 9, 2026.
 
 ## Maturity Tiers
 
@@ -133,11 +133,22 @@ Use this section for recurring updates.
 - Maturity movement: release-readiness automation now includes proactive stale-evidence governance and normalized runtime-tag semantics.
 - Next actions: confirm first scheduled workflow run and verify stale-alert issue lifecycle behavior end-to-end.
 
+### 2026-02-09 (Phase 6 and Consumer Path Alignment)
+
+- Scope: formalized post-migration execution matrix and aligned consumer quickstart naming to the active runtime baseline.
+- Repos touched: `t81-roadmap`, `t81-examples`.
+- Risks discovered: low technical risk; main risk is process drift if Phase 6 owner issue cadence is not maintained.
+- Evidence added: `PHASE6_DEVELOPMENT_MATRIX.md`, `ROADMAP.md` Phase 6 section, and `t81-examples` `runtime-v0.5` e2e path with compatibility wrapper.
+- Maturity movement: roadmap transitioned from migration-complete tracking to an explicit post-migration development execution lane.
+- Next actions: drive Phase 6 tracker issue `#18` and monitor consumer-path CI execution cadence.
+
 ## Pending Coordination Items
 
 - Keep `MIGRATION_DASHBOARD.md` current and review failing cross-repo CI conclusions weekly.
 - Triage new `rfc-intake` issues generated from `t81-foundation/spec` changes.
 - Keep Phase 3 evidence artifacts refreshed and linked from `PHASE3_MILESTONE_MATRIX.md` as new runs land.
 - Keep `PHASE4_SECURITY_MATRIX.md` linked issues moving and attach threat/benchmark evidence artifacts as they land.
+- Maintain Phase 6 execution tracker issue `#18` and keep owner/evidence fields current.
+- Drive P6-D2 consumer-path upkeep in `t81-examples` and `t81-docs` on each runtime contract promotion.
 - Keep monthly publication bundles current in `t81-benchmarks/publications/`.
 - Keep weekly ecosystem release-cut records current under `releases/`.

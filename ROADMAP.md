@@ -1,6 +1,6 @@
 # Roadmap
 
-Snapshot date: February 8, 2026.
+Snapshot date: February 9, 2026.
 
 ## Execution Cadence
 
@@ -24,6 +24,7 @@ Snapshot date: February 8, 2026.
 - `P3 - Hardware and Systems Prototyping`
 - `P4 - Security and Applied Domains`
 - `P5 - Public Release Readiness`
+- `P6 - Post-Migration Development`
 
 ## Phase 0: Alignment and Baselines
 
@@ -84,6 +85,16 @@ Owner cluster: `t81-roadmap`, `t81-docs`, `t81-examples`, `t81-python`
 - [x] Keep `MIGRATION_DASHBOARD.md` refreshed from CI automation (`update-migration-dashboard.yml`).
 - [x] Track next runtime contract promotion in a cross-repo issue (`#14`).
 - [x] Publish contributor onboarding path from first issue to advanced work.
+
+## Phase 6: Post-Migration Development
+
+Owner cluster: `t81-roadmap`, `t81-vm`, `t81-lang`, `t81-python`, `t81-docs`, `t81-examples`, `t81-benchmarks`, `trinity*`
+Milestone matrix: `PHASE6_DEVELOPMENT_MATRIX.md`
+
+- [ ] Define runtime contract promotion cadence and compatibility window policy.
+- [ ] Keep canonical consumer path aligned with active runtime baseline (`runtime-v0.5` and successors).
+- [ ] Convert weekly release-readiness dry runs into sustained release-candidate gates.
+- [ ] Publish quarterly execution objectives for `trinity`, `trinity-decrypt`, and `trinity-pow`.
 
 ## Milestone Rules
 
