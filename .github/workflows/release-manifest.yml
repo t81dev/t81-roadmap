@@ -23,6 +23,13 @@ jobs:
           path: t81-vm
           ref: main
 
+      - name: Checkout t81-foundation
+        uses: actions/checkout@v4
+        with:
+          repository: t81dev/t81-foundation
+          path: t81-foundation
+          ref: main
+
       - name: Checkout t81-lang
         uses: actions/checkout@v4
         with:
