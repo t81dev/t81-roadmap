@@ -101,6 +101,7 @@ repos=(
   "${OWNER}/t81-lang|ci"
   "${OWNER}/t81-python|CI"
   "${OWNER}/t81-docs|Docs Validate"
+  "${OWNER}/t81-examples|runtime-v0.5-e2e"
 )
 
 rows=()

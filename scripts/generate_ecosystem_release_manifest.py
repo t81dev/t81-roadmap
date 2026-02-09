@@ -28,6 +28,7 @@ CI_WORKFLOWS = [
     ("t81dev/t81-lang", "ci"),
     ("t81dev/t81-python", "CI"),
     ("t81dev/t81-docs", "Docs Validate"),
+    ("t81dev/t81-examples", "runtime-v0.5-e2e"),
 ]
 
 

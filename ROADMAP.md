@@ -103,5 +103,6 @@ Milestone matrix: `PHASE6_DEVELOPMENT_MATRIX.md`
 - Claims about performance require reproducible benchmark artifacts.
 - Promotion between phases requires meeting the tier criteria in `STATUS.md`.
 - VM/runtime contract changes require a version/tag bump in `t81-vm` and synchronized compatibility updates in `t81-lang` and `t81-python`.
+- Runtime contract promotions must follow `docs/runtime-promotion-policy.md` evidence and rollback rules.
 - Each cross-repo runtime sync checkpoint must be logged in `MIGRATION_CHECKPOINTS.md` with commit pins and CI evidence links.
 - `t81-foundation/spec` updates require intake issues via `foundation-rfc-intake.yml` with linked follow-up tasks in affected repos.

@@ -28,6 +28,7 @@ This repository is the canonical place to:
 - Migration Blocker Map: `MIGRATION_BLOCKERS.json`
 - Runtime Sync Report: `RUNTIME_SYNC_REPORT.md`
 - Migration Checkpoints: `MIGRATION_CHECKPOINTS.md`
+- Runtime Promotion Policy: `docs/runtime-promotion-policy.md`
 - Ecosystem Release Manifest: `ECOSYSTEM_RELEASE_MANIFEST.json`
 - Contributor Onboarding Path: `CONTRIBUTOR_ONBOARDING_PATH.md`
 - Contribution Process: `CONTRIBUTING.md`
