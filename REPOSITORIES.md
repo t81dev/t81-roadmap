@@ -1,20 +1,20 @@
 # Repository Catalog
 
-Snapshot date: February 09, 2026.
+Snapshot date: February 23, 2026.
 Source: `https://github.com/t81dev`
 
 ## Foundation and Specs
 
-- `duotronic-computing` (C++): Interpretive and contextual material exploring duotronic computing and the Ternary Logic Unit (TLU). This repository is non-normative and depends on the formal specification at t81dev/duotronic-whitepaper. [repo](https://github.com/t81dev/duotronic-computing) | last push: 2026-01-25.
+- `duotronic-computing` (C++): Interpretive and contextual material exploring duotronic computing and the Ternary Logic Unit (TLU). This repository is non-normative and depends on the formal specification at t81dev/duotronic-whitepaper. [repo](https://github.com/t81dev/duotronic-computing) | last push: 2026-02-15.
 - `duotronic-thesis` (n/a): No description provided. [repo](https://github.com/t81dev/duotronic-thesis) | last push: 2026-01-26.
 - `duotronic-whitepaper` (n/a): A formal proposal and reference semantics for a ternary logic coprocessor that augments binary systems. [repo](https://github.com/t81dev/duotronic-whitepaper) | last push: 2026-02-08.
 - `t81-constraints` (n/a): Epistemic constraints, assumptions, and failure boundaries governing the t81dev research ecosystem. [repo](https://github.com/t81dev/t81-constraints) | last push: 2026-02-08.
-- `t81-foundation` (C++):  T81 Ecosystem: a deterministic, ternary-native computing stack featuring base-81 data types, the TISC instruction set, T81VM, T81Lang, Axion safety/optimization, and the full recursive cognition tiers. [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-02-09.
+- `t81-foundation` (C++): Deterministic ternary-native computing stack featuring base-81 data types, TISC instruction set, T81VM, T81Lang, Axion safety/optimization engine, and recursive cognition tiers — built for bit-exact, auditable, reproducible execution in AI, cryptography, and scientific computing. [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-02-23.
 
 ## Quantization and Model Runtime
 
 - `ANGELA` (Python): No description provided. [repo](https://github.com/t81dev/ANGELA) | last push: 2026-01-25.
-- `llama.cpp` (C++): LLM inference in C/C++ [repo](https://github.com/t81dev/llama.cpp) | last push: 2026-02-09.
+- `llama.cpp` (C++): LLM inference in C/C++ [repo](https://github.com/t81dev/llama.cpp) | last push: 2026-02-10.
 - `t81-python` (Python): High-level Python package on PyPI with clean APIs, type hints, and integration examples (e.g., with Hugging Face or llama.cpp Python bindings). [repo](https://github.com/t81dev/t81-python) | last push: 2026-02-08.
 - `t81lib` (C++): t81lib – Balanced-ternary quantization and arithmetic core for AI and quant workloads in modern C++ and Python. [repo](https://github.com/t81dev/t81lib) | last push: 2026-02-08.
 - `ternary` (C++): Ternary Quantization for LLMs: Implement balanced ternary (T3_K) weights for 2.63-bit quantization—the first working solution for modern large language models. [repo](https://github.com/t81dev/ternary) | last push: 2025-11-29.
@@ -27,9 +27,9 @@ Source: `https://github.com/t81dev`
 
 ## Hardware and Systems
 
-- `t81-hardware` (SystemVerilog): Verilog/VHDL simulations, testbenches, FPGA targeting scripts, or even a software emulator of the ternary co-processor. [repo](https://github.com/t81dev/t81-hardware) | last push: 2026-02-09.
-- `ternary-fabric` (C): Ternary Fabric is a ternary-native memory and interconnect co-processor designed to accelerate AI and signal processing workloads.  [repo](https://github.com/t81dev/ternary-fabric) | last push: 2026-02-08.
-- `ternary-memory-research` (Python): No description provided. [repo](https://github.com/t81dev/ternary-memory-research) | last push: 2026-02-08.
+- `t81-hardware` (SystemVerilog): Verilog/VHDL simulations, testbenches, FPGA targeting scripts, or even a software emulator of the ternary co-processor. [repo](https://github.com/t81dev/t81-hardware) | last push: 2026-02-23.
+- `ternary-fabric` (C): Ternary Fabric is a ternary-native memory and interconnect co-processor designed to accelerate AI and signal processing workloads.  [repo](https://github.com/t81dev/ternary-fabric) | last push: 2026-02-16.
+- `ternary-memory-research` (Python): No description provided. [repo](https://github.com/t81dev/ternary-memory-research) | last push: 2026-02-15.
 - `ternary_gcc_plugin` (C): Enable C/C++ to express balanced-ternary operations, lower them deterministically through GCC into a normative helper ABI, and use that ABI as a stable interface for experimental ternary ISA and SIMD prototyping. [repo](https://github.com/t81dev/ternary_gcc_plugin) | last push: 2026-02-08.
 
 ## Cryptography Experiments
@@ -40,10 +40,10 @@ Source: `https://github.com/t81dev`
 
 ## Docs, Narrative, and Program Coordination
 
-- `t81-docs` (Shell): Central hub with architecture overviews, installation guides, API references, visual explainers of balanced ternary, migration paths from binary, and a unified "getting started" for the whole stack. [repo](https://github.com/t81dev/t81-docs) | last push: 2026-02-09.
+- `t81-docs` (Shell): Central hub with architecture overviews, installation guides, API references, visual explainers of balanced ternary, migration paths from binary, and a unified "getting started" for the whole stack. [repo](https://github.com/t81dev/t81-docs) | last push: 2026-02-23.
 - `t81-examples` (Shell): Curated demo [repo](https://github.com/t81dev/t81-examples) | last push: 2026-02-09.
-- `t81-roadmap` (Shell): Public vision document, milestone tracking, contribution guidelines, and discussion of bigger picture (e.g., ternary-native ASICs, integration with quantum ideas, AGI implications). [repo](https://github.com/t81dev/t81-roadmap) | last push: 2026-02-09.
-- `ternary-delta` (n/a): What ternary changes, what it doesn’t, and why now. [repo](https://github.com/t81dev/ternary-delta) | last push: 2026-01-23.
+- `t81-roadmap` (Shell): Public vision document, milestone tracking, contribution guidelines, and discussion of bigger picture (e.g., ternary-native ASICs, integration with quantum ideas, AGI implications). [repo](https://github.com/t81dev/t81-roadmap) | last push: 2026-02-23.
+- `ternary-delta` (n/a): What ternary changes, what it doesn’t, and why now. [repo](https://github.com/t81dev/ternary-delta) | last push: 2026-02-16.
 
 ## Uncategorized
 
