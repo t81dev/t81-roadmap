@@ -1,6 +1,6 @@
 # Repository Catalog
 
-Snapshot date: February 23, 2026.
+Snapshot date: March 02, 2026.
 Source: `https://github.com/t81dev`
 
 ## Foundation and Specs
@@ -9,7 +9,7 @@ Source: `https://github.com/t81dev`
 - `duotronic-thesis` (n/a): No description provided. [repo](https://github.com/t81dev/duotronic-thesis) | last push: 2026-01-26.
 - `duotronic-whitepaper` (n/a): A formal proposal and reference semantics for a ternary logic coprocessor that augments binary systems. [repo](https://github.com/t81dev/duotronic-whitepaper) | last push: 2026-02-08.
 - `t81-constraints` (n/a): Epistemic constraints, assumptions, and failure boundaries governing the t81dev research ecosystem. [repo](https://github.com/t81dev/t81-constraints) | last push: 2026-02-08.
-- `t81-foundation` (C++): Deterministic ternary-native computing stack featuring base-81 data types, TISC instruction set, T81VM, T81Lang, Axion safety/optimization engine, and recursive cognition tiers — built for bit-exact, auditable, reproducible execution in AI, cryptography, and scientific computing. [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-02-23.
+- `t81-foundation` (C++): T81 is a unified, deterministic, ternary-native computational architecture designed to surpass the limitations of binary computation.  [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-03-01.
 
 ## Quantization and Model Runtime
 
@@ -21,13 +21,13 @@ Source: `https://github.com/t81dev`
 
 ## Tooling and Observability
 
-- `t81-benchmarks` (Shell): Rigorous comparisons: inference speed/memory/accuracy of T3_K vs Q4/Q5, simulated energy, crypto throughput, etc. [repo](https://github.com/t81dev/t81-benchmarks) | last push: 2026-02-08.
+- `t81-benchmarks` (Shell): Rigorous comparisons: inference speed/memory/accuracy of T3_K vs Q4/Q5, simulated energy, crypto throughput, etc. [repo](https://github.com/t81dev/t81-benchmarks) | last push: 2026-03-01.
 - `ternary-pager` (C): A user-space pager for falsifying ternary semantic compression [repo](https://github.com/t81dev/ternary-pager) | last push: 2026-02-08.
 - `ternary-tools` (Rust): file(1) of the ternary age — balanced-ternary-aware GGUF inspector and debugger in Rust [repo](https://github.com/t81dev/ternary-tools) | last push: 2026-02-08.
 
 ## Hardware and Systems
 
-- `t81-hardware` (SystemVerilog): Verilog/VHDL simulations, testbenches, FPGA targeting scripts, or even a software emulator of the ternary co-processor. [repo](https://github.com/t81dev/t81-hardware) | last push: 2026-02-23.
+- `t81-hardware` (SystemVerilog): Verilog/VHDL simulations, testbenches, FPGA targeting scripts, or even a software emulator of the ternary co-processor. [repo](https://github.com/t81dev/t81-hardware) | last push: 2026-03-02.
 - `ternary-fabric` (C): Ternary Fabric is a ternary-native memory and interconnect co-processor designed to accelerate AI and signal processing workloads.  [repo](https://github.com/t81dev/ternary-fabric) | last push: 2026-02-16.
 - `ternary-memory-research` (Python): No description provided. [repo](https://github.com/t81dev/ternary-memory-research) | last push: 2026-02-15.
 - `ternary_gcc_plugin` (C): Enable C/C++ to express balanced-ternary operations, lower them deterministically through GCC into a normative helper ABI, and use that ABI as a stable interface for experimental ternary ISA and SIMD prototyping. [repo](https://github.com/t81dev/ternary_gcc_plugin) | last push: 2026-02-08.
@@ -40,9 +40,9 @@ Source: `https://github.com/t81dev`
 
 ## Docs, Narrative, and Program Coordination
 
-- `t81-docs` (Shell): Central hub with architecture overviews, installation guides, API references, visual explainers of balanced ternary, migration paths from binary, and a unified "getting started" for the whole stack. [repo](https://github.com/t81dev/t81-docs) | last push: 2026-02-23.
+- `t81-docs` (Shell): Central hub with architecture overviews, installation guides, API references, visual explainers of balanced ternary, migration paths from binary, and a unified "getting started" for the whole stack. [repo](https://github.com/t81dev/t81-docs) | last push: 2026-03-02.
 - `t81-examples` (Shell): Curated demo [repo](https://github.com/t81dev/t81-examples) | last push: 2026-02-09.
-- `t81-roadmap` (Shell): Public vision document, milestone tracking, contribution guidelines, and discussion of bigger picture (e.g., ternary-native ASICs, integration with quantum ideas, AGI implications). [repo](https://github.com/t81dev/t81-roadmap) | last push: 2026-02-23.
+- `t81-roadmap` (Shell): Public vision document, milestone tracking, contribution guidelines, and discussion of bigger picture (e.g., ternary-native ASICs, integration with quantum ideas, AGI implications). [repo](https://github.com/t81dev/t81-roadmap) | last push: 2026-03-02.
 - `ternary-delta` (n/a): What ternary changes, what it doesn’t, and why now. [repo](https://github.com/t81dev/ternary-delta) | last push: 2026-02-16.
 
 ## Uncategorized
