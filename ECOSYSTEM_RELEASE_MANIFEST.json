@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-02T08:31:25Z",
+  "generated_at_utc": "2026-03-09T07:13:59Z",
   "runtime_contract": {
     "tag": "runtime-contract-v0.5",
     "contract_version": "2026-02-08-v5",
@@ -11,7 +11,7 @@
     "owner": "t81-roadmap"
   },
   "repo_pins": {
-    "t81-foundation": "ba1d7c8a6e19f18230599f00648153008dfa30ae",
+    "t81-foundation": "d1768e30a5295242543cba2f41a514cec2b42b35",
     "t81-vm": "4e2bba639d05249722db847563ae37991289ea52",
     "t81-lang": "bcce8e729595df8fdcf92ad81c0c751fe0d928d6",
     "t81-python": "3f576442ed6776a560c4a2daf3f505a31ff97ddf",
@@ -20,15 +20,15 @@
     "ternary-tools": "a7359f98a0218466a37755851f0610f2c2e3830b",
     "ternary-pager": "8d8ec206cac812bd52798a9fbddf40466ccc71e8",
     "t81-benchmarks": "5318945ebc9660920d320cef12464386b2068c4b",
-    "t81-roadmap": "5bed0077e2803cdab4a25e9ce5bc1d5da4bd5884"
+    "t81-roadmap": "3475a23e4970a7b69d07a495e67d4267af375fb0"
   },
   "ci_evidence": [
     {
       "repo": "t81dev/t81-foundation",
       "workflow": "runtime-contract",
       "conclusion": "success",
-      "run_url": "https://github.com/t81dev/t81-foundation/actions/runs/22562813131",
-      "completed_at_utc": "2026-03-02T05:31:42Z"
+      "run_url": "https://github.com/t81dev/t81-foundation/actions/runs/22839916349",
+      "completed_at_utc": "2026-03-09T05:36:18Z"
     },
     {
       "repo": "t81dev/t81-vm",
@@ -41,8 +41,8 @@
       "repo": "t81dev/t81-vm",
       "workflow": "ecosystem-compat-matrix",
       "conclusion": "failure",
-      "run_url": "https://github.com/t81dev/t81-vm/actions/runs/22563068243",
-      "completed_at_utc": "2026-03-02T05:43:27Z"
+      "run_url": "https://github.com/t81dev/t81-vm/actions/runs/22840160030",
+      "completed_at_utc": "2026-03-09T05:47:23Z"
     },
     {
       "repo": "t81dev/t81-lang",
@@ -69,8 +69,8 @@
       "repo": "t81dev/t81-examples",
       "workflow": "runtime-v0.5-e2e",
       "conclusion": "success",
-      "run_url": "https://github.com/t81dev/t81-examples/actions/runs/22564342208",
-      "completed_at_utc": "2026-03-02T06:34:38Z"
+      "run_url": "https://github.com/t81dev/t81-examples/actions/runs/22841525340",
+      "completed_at_utc": "2026-03-09T06:39:49Z"
     }
   ]
 }
