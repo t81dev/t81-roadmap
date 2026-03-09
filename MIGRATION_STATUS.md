@@ -1,12 +1,12 @@
 # Migration Status Board
 
-Snapshot time (UTC): 2026-03-02T08:31:25Z.
+Snapshot time (UTC): 2026-03-09T07:30:36Z.
 
 Legend: `green` = contract marker aligned, `yellow` = marker missing, `red` = marker drift.
 
 | Repo | Status | Owner | Last Verified SHA | Blocking Issue |
 | --- | --- | --- | --- | --- |
-| `t81-foundation` | green | @t81dev | `ba1d7c8a6e19` | none |
+| `t81-foundation` | green | @t81dev | `d1768e30a529` | none |
 | `t81-vm` | green | @t81dev | `4e2bba639d05` | none |
 | `t81-lang` | green | @t81dev | `bcce8e729595` | none |
 | `t81-python` | green | @t81dev | `3f576442ed67` | none |
@@ -15,7 +15,7 @@ Legend: `green` = contract marker aligned, `yellow` = marker missing, `red` = ma
 | `ternary-tools` | green | @t81dev | `a7359f98a021` | none |
 | `ternary-pager` | green | @t81dev | `8d8ec206cac8` | none |
 | `t81-benchmarks` | green | @t81dev | `5318945ebc96` | none |
-| `t81-roadmap` | green | @t81dev | `5bed0077e280` | none |
+| `t81-roadmap` | green | @t81dev | `82534b9f0a1c` | none |
 
 Source of truth: `ECOSYSTEM_RELEASE_MANIFEST.json`.
 Blocker map source: `MIGRATION_BLOCKERS.json`.
