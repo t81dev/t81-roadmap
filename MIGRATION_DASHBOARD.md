@@ -1,6 +1,6 @@
 # Ecosystem Migration Dashboard
 
-Snapshot date: 2026-03-02.
+Snapshot date: 2026-03-09.
 
 ## Runtime Contract
 
@@ -22,13 +22,13 @@ Snapshot date: 2026-03-02.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
-| `t81dev/t81-foundation` | `runtime-contract` | [success](https://github.com/t81dev/t81-foundation/actions/runs/22562813131) | 2026-03-02T05:31:42Z |
+| `t81dev/t81-foundation` | `runtime-contract` | [success](https://github.com/t81dev/t81-foundation/actions/runs/22839916349) | 2026-03-09T05:36:18Z |
 | `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21809608188) | 2026-02-09T01:50:01Z |
-| `t81dev/t81-vm` | `ecosystem-compat-matrix` | [failure](https://github.com/t81dev/t81-vm/actions/runs/22563068243) | 2026-03-02T05:43:27Z |
+| `t81dev/t81-vm` | `ecosystem-compat-matrix` | [failure](https://github.com/t81dev/t81-vm/actions/runs/22840160030) | 2026-03-09T05:47:23Z |
 | `t81dev/t81-lang` | `ci` | [failure](https://github.com/t81dev/t81-lang/actions/runs/21839081919) | 2026-02-09T20:21:46Z |
 | `t81dev/t81-python` | `CI` | [success](https://github.com/t81dev/t81-python/actions/runs/21807280712) | 2026-02-08T23:22:57Z |
 | `t81dev/t81-docs` | `Docs Validate` | [success](https://github.com/t81dev/t81-docs/actions/runs/21807864177) | 2026-02-09T00:05:24Z |
-| `t81dev/t81-examples` | `runtime-v0.5-e2e` | [success](https://github.com/t81dev/t81-examples/actions/runs/22564342208) | 2026-03-02T06:34:38Z |
+| `t81dev/t81-examples` | `runtime-v0.5-e2e` | [success](https://github.com/t81dev/t81-examples/actions/runs/22841525340) | 2026-03-09T06:39:49Z |
 
 ## Failing Checks
 
