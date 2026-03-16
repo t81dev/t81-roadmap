@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-03-09T08:32:20Z",
+  "generated_at_utc": "2026-03-16T08:45:16Z",
   "max_age_days": 30,
-  "stale_count": 0,
+  "stale_count": 8,
   "issues": [
     {
       "phase": "phase-3",
@@ -11,8 +11,8 @@
       "title": "Phase 3 milestone ladder: simulation and verification matrix",
       "state": "closed",
       "updated_at": "2026-02-08T23:51:12Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     },
     {
       "phase": "phase-3",
@@ -22,8 +22,8 @@
       "title": "Phase 3 kickoff execution: hardware simulation milestone plan",
       "state": "closed",
       "updated_at": "2026-02-08T23:51:37Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     },
     {
       "phase": "phase-3",
@@ -33,8 +33,8 @@
       "title": "Phase 3 integration: memory/interconnect experiment handoff map",
       "state": "closed",
       "updated_at": "2026-02-08T23:51:12Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     },
     {
       "phase": "phase-3",
@@ -44,8 +44,8 @@
       "title": "Phase 3 validation hypotheses: memory kill criteria evidence plan",
       "state": "closed",
       "updated_at": "2026-02-08T23:51:12Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     },
     {
       "phase": "phase-4",
@@ -55,8 +55,8 @@
       "title": "P4 kickoff: security and applied domains checklist",
       "state": "closed",
       "updated_at": "2026-02-08T23:02:33Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     },
     {
       "phase": "phase-4",
@@ -66,8 +66,8 @@
       "title": "Phase 4: security evaluation baseline plan",
       "state": "closed",
       "updated_at": "2026-02-08T23:07:33Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     },
     {
       "phase": "phase-4",
@@ -77,8 +77,8 @@
       "title": "Phase 4: decrypt-path evaluation and benchmark alignment",
       "state": "closed",
       "updated_at": "2026-02-08T23:07:35Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     },
     {
       "phase": "phase-4",
@@ -88,8 +88,8 @@
       "title": "Phase 4: pow workload threat-model and evaluation notes",
       "state": "closed",
       "updated_at": "2026-02-08T23:07:38Z",
-      "age_days": 28,
-      "stale": false
+      "age_days": 35,
+      "stale": true
     }
   ]
 }
