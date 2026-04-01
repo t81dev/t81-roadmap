@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-03-30T09:03:53Z",
+  "generated_at_utc": "2026-04-01T09:21:28Z",
   "runtime_contract": {
     "tag": "runtime-contract-v0.5",
     "contract_version": "2026-02-08-v5",
@@ -11,7 +11,7 @@
     "owner": "t81-roadmap"
   },
   "repo_pins": {
-    "t81-foundation": "925f4a32d932e71cc199e3d5c9becfea230f1a62",
+    "t81-foundation": "d5db886629926fd11358c4e71ce3a37d7e333573",
     "t81-vm": "4e2bba639d05249722db847563ae37991289ea52",
     "t81-lang": "bcce8e729595df8fdcf92ad81c0c751fe0d928d6",
     "t81-python": "3f576442ed6776a560c4a2daf3f505a31ff97ddf",
@@ -20,15 +20,15 @@
     "ternary-tools": "a7359f98a0218466a37755851f0610f2c2e3830b",
     "ternary-pager": "8d8ec206cac812bd52798a9fbddf40466ccc71e8",
     "t81-benchmarks": "5318945ebc9660920d320cef12464386b2068c4b",
-    "t81-roadmap": "d8afc926e83f3fc6dd02c9f9e57be04b38a7e572"
+    "t81-roadmap": "a601a12f28a7afdaff25fa65d2c920df99fd3b56"
   },
   "ci_evidence": [
     {
       "repo": "t81dev/t81-foundation",
       "workflow": "runtime-contract",
       "conclusion": "success",
-      "run_url": "https://github.com/t81dev/t81-foundation/actions/runs/23733849204",
-      "completed_at_utc": "2026-03-30T07:50:45Z"
+      "run_url": "https://github.com/t81dev/t81-foundation/actions/runs/23834520118",
+      "completed_at_utc": "2026-04-01T06:05:13Z"
     },
     {
       "repo": "t81dev/t81-vm",
@@ -41,8 +41,8 @@
       "repo": "t81dev/t81-vm",
       "workflow": "ecosystem-compat-matrix",
       "conclusion": "failure",
-      "run_url": "https://github.com/t81dev/t81-vm/actions/runs/23730878296",
-      "completed_at_utc": "2026-03-30T06:34:59Z"
+      "run_url": "https://github.com/t81dev/t81-vm/actions/runs/23834907907",
+      "completed_at_utc": "2026-04-01T06:19:18Z"
     },
     {
       "repo": "t81dev/t81-lang",
