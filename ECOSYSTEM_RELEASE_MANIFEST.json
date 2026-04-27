@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-04-27T08:39:19Z",
+  "generated_at_utc": "2026-04-27T08:42:09Z",
   "runtime_contract": {
     "tag": "runtime-contract-v0.5",
     "contract_version": "2026-02-08-v5",
@@ -20,7 +20,7 @@
     "ternary-tools": "a7359f98a0218466a37755851f0610f2c2e3830b",
     "ternary-pager": "8d8ec206cac812bd52798a9fbddf40466ccc71e8",
     "t81-benchmarks": "e2f09837d0d4c0dfeae551c220e3d1b3147347f2",
-    "t81-roadmap": "bd803e6a049204f77cfe69da12aa2a997753554a"
+    "t81-roadmap": "ffeffa59d94ca19c496dfb0c0a7b7be5531c2b5b"
   },
   "ci_evidence": [
     {
