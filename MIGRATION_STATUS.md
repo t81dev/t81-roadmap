@@ -1,6 +1,6 @@
 # Migration Status Board
 
-Snapshot time (UTC): 2026-06-01T13:22:54Z.
+Snapshot time (UTC): 2026-06-08T11:22:26Z.
 
 Legend: `green` = contract marker aligned, `yellow` = marker missing, `red` = marker drift.
 
@@ -14,8 +14,8 @@ Legend: `green` = contract marker aligned, `yellow` = marker missing, `red` = ma
 | `t81-examples` | green | @t81dev | `a972684f4874` | none |
 | `ternary-tools` | green | @t81dev | `a7359f98a021` | none |
 | `ternary-pager` | green | @t81dev | `8d8ec206cac8` | none |
-| `t81-benchmarks` | green | @t81dev | `711c6d85abda` | none |
-| `t81-roadmap` | green | @t81dev | `e5be06ed2af2` | none |
+| `t81-benchmarks` | green | @t81dev | `b18aa6325566` | none |
+| `t81-roadmap` | green | @t81dev | `6d07e6eb999c` | none |
 
 Source of truth: `ECOSYSTEM_RELEASE_MANIFEST.json`.
 Blocker map source: `MIGRATION_BLOCKERS.json`.
