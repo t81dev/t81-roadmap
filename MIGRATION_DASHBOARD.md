@@ -1,6 +1,6 @@
 # Ecosystem Migration Dashboard
 
-Snapshot date: 2026-06-08.
+Snapshot date: 2026-06-15.
 
 ## Runtime Contract
 
@@ -22,7 +22,7 @@ Snapshot date: 2026-06-08.
 
 | Repo | Workflow | Latest Conclusion | Completed At (UTC) |
 | --- | --- | --- | --- |
-| `t81dev/t81-foundation` | `runtime-contract` | [success](https://github.com/t81dev/t81-foundation/actions/runs/27127149523) | 2026-06-08T09:04:57Z |
+| `t81dev/t81-foundation` | `runtime-contract` | [success](https://github.com/t81dev/t81-foundation/actions/runs/27540400186) | 2026-06-15T10:34:59Z |
 | `t81dev/t81-vm` | `ecosystem-contract` | [success](https://github.com/t81dev/t81-vm/actions/runs/21809608188) | 2026-02-09T01:50:01Z |
 | `t81dev/t81-vm` | `ecosystem-compat-matrix` | [failure](https://github.com/t81dev/t81-vm/actions/runs/24229592638) | 2026-04-10T06:24:08Z |
 | `t81dev/t81-lang` | `ci` | [failure](https://github.com/t81dev/t81-lang/actions/runs/21839081919) | 2026-02-09T20:21:46Z |
