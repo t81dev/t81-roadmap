@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-29T12:22:04Z",
+  "generated_at_utc": "2026-07-01T11:32:42Z",
   "runtime_contract": {
     "tag": "runtime-contract-v0.5",
     "contract_version": "2026-02-08-v5",
@@ -20,15 +20,15 @@
     "ternary-tools": "a7359f98a0218466a37755851f0610f2c2e3830b",
     "ternary-pager": "8d8ec206cac812bd52798a9fbddf40466ccc71e8",
     "t81-benchmarks": "b18aa63255668198f7e62ba49a143a8443b8ae45",
-    "t81-roadmap": "c3ef5f01cf4f6c9ba73c439509bfe101cd7b4c83"
+    "t81-roadmap": "1ee6be320998f7e5be6368d5638f499c59e4a5dd"
   },
   "ci_evidence": [
     {
       "repo": "t81dev/t81-foundation",
       "workflow": "runtime-contract",
       "conclusion": "success",
-      "run_url": "https://github.com/t81dev/t81-foundation/actions/runs/28361225171",
-      "completed_at_utc": "2026-06-29T09:11:21Z"
+      "run_url": "https://github.com/t81dev/t81-foundation/actions/runs/28504438390",
+      "completed_at_utc": "2026-07-01T08:32:39Z"
     },
     {
       "repo": "t81dev/t81-vm",
