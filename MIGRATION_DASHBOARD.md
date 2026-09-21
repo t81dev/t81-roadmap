@@ -1,6 +1,6 @@
 # Ecosystem Migration Dashboard
 
-Snapshot date: 2026-09-14.
+Snapshot date: 2026-09-21.
 
 ## Runtime Contract
 
