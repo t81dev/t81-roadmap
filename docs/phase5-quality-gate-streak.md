@@ -1,6 +1,6 @@
 # Phase 5 Quality-Gate Streak
 
-Snapshot date: 2026-11-02.
+Snapshot date: 2026-11-09.
 
 Track consecutive weekly `Phase5 Release Readiness` green runs for
 P6-D3 (`t81-roadmap#21`).
@@ -8,24 +8,24 @@ P6-D3 (`t81-roadmap#21`).
 ## Target
 
 - Goal: `4` consecutive weekly green runs.
-- Current streak: `10 / 4`.
+- Current streak: `11 / 4`.
 
 ## Streak Log
 
 | Index | Date (UTC) | Workflow Run | Result |
 | --- | --- | --- | --- |
-| 1 | 2026-10-26 | [#40341000927](https://github.com/t81dev/t81-roadmap/actions/runs/40341000927) | `success` |
-| 2 | 2026-10-19 | [#39274083593](https://github.com/t81dev/t81-roadmap/actions/runs/39274083593) | `success` |
-| 3 | 2026-10-12 | [#38281489048](https://github.com/t81dev/t81-roadmap/actions/runs/38281489048) | `success` |
-| 4 | 2026-10-05 | [#37340786205](https://github.com/t81dev/t81-roadmap/actions/runs/37340786205) | `success` |
-| 5 | 2026-09-28 | [#36448449047](https://github.com/t81dev/t81-roadmap/actions/runs/36448449047) | `success` |
-| 6 | 2026-09-21 | [#35612899865](https://github.com/t81dev/t81-roadmap/actions/runs/35612899865) | `success` |
-| 7 | 2026-09-14 | [#34855529491](https://github.com/t81dev/t81-roadmap/actions/runs/34855529491) | `success` |
-| 8 | 2026-09-07 | [#34128825677](https://github.com/t81dev/t81-roadmap/actions/runs/34128825677) | `success` |
-| 9 | 2026-08-31 | [#33408933734](https://github.com/t81dev/t81-roadmap/actions/runs/33408933734) | `success` |
-| 10 | 2026-08-24 | [#32706646237](https://github.com/t81dev/t81-roadmap/actions/runs/32706646237) | `success` |
-| 11 | 2026-08-17 | [#32010321035](https://github.com/t81dev/t81-roadmap/actions/runs/32010321035) | `failure` |
-| 12 | 2026-08-10 | [#31372702124](https://github.com/t81dev/t81-roadmap/actions/runs/31372702124) | `success` |
+| 1 | 2026-11-02 | [#41491410404](https://github.com/t81dev/t81-roadmap/actions/runs/41491410404) | `success` |
+| 2 | 2026-10-26 | [#40341000927](https://github.com/t81dev/t81-roadmap/actions/runs/40341000927) | `success` |
+| 3 | 2026-10-19 | [#39274083593](https://github.com/t81dev/t81-roadmap/actions/runs/39274083593) | `success` |
+| 4 | 2026-10-12 | [#38281489048](https://github.com/t81dev/t81-roadmap/actions/runs/38281489048) | `success` |
+| 5 | 2026-10-05 | [#37340786205](https://github.com/t81dev/t81-roadmap/actions/runs/37340786205) | `success` |
+| 6 | 2026-09-28 | [#36448449047](https://github.com/t81dev/t81-roadmap/actions/runs/36448449047) | `success` |
+| 7 | 2026-09-21 | [#35612899865](https://github.com/t81dev/t81-roadmap/actions/runs/35612899865) | `success` |
+| 8 | 2026-09-14 | [#34855529491](https://github.com/t81dev/t81-roadmap/actions/runs/34855529491) | `success` |
+| 9 | 2026-09-07 | [#34128825677](https://github.com/t81dev/t81-roadmap/actions/runs/34128825677) | `success` |
+| 10 | 2026-08-31 | [#33408933734](https://github.com/t81dev/t81-roadmap/actions/runs/33408933734) | `success` |
+| 11 | 2026-08-24 | [#32706646237](https://github.com/t81dev/t81-roadmap/actions/runs/32706646237) | `success` |
+| 12 | 2026-08-17 | [#32010321035](https://github.com/t81dev/t81-roadmap/actions/runs/32010321035) | `failure` |
 
 ## Rule
 
