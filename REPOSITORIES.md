@@ -1,6 +1,6 @@
 # Repository Catalog
 
-Snapshot date: November 16, 2026.
+Snapshot date: November 23, 2026.
 Source: `https://github.com/t81dev`
 
 ## Foundation and Specs
@@ -9,7 +9,7 @@ Source: `https://github.com/t81dev`
 - `duotronic-thesis` (n/a): No description provided. [repo](https://github.com/t81dev/duotronic-thesis) | last push: 2026-01-26.
 - `duotronic-whitepaper` (n/a): A formal proposal and reference semantics for a ternary logic coprocessor that augments binary systems. [repo](https://github.com/t81dev/duotronic-whitepaper) | last push: 2026-02-08.
 - `t81-constraints` (n/a): Epistemic constraints, assumptions, and failure boundaries governing the t81dev research ecosystem. [repo](https://github.com/t81dev/t81-constraints) | last push: 2026-02-08.
-- `t81-foundation` (C++): Can alternative state representations and transition dynamics—including deterministic, stochastic, and hybrid systems—support computational architectures with capabilities or efficiency advantages not obtained as effectively through conventional instruction-oriented execution? [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-11-16.
+- `t81-foundation` (C++): Can alternative state representations and transition dynamics—including deterministic, stochastic, and hybrid systems—support computational architectures with capabilities or efficiency advantages not obtained as effectively through conventional instruction-oriented execution? [repo](https://github.com/t81dev/t81-foundation) | last push: 2026-11-23.
 
 ## Quantization and Model Runtime
 
